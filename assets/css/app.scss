@@ -1,8 +1,12 @@
 ---
 ---
 
-$color: red;
+@import 'settings/colors';
+@import 'settings/typography';
+@import 'settings/breakpoints';
 
-body {
-  background: $color;
-}
+@import 'generic/normalize';
+@import 'generic/box-sizing';
+
+@import 'elements/type';
+@import 'elements/button';
