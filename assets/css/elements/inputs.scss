@@ -1,0 +1,32 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 1.6;
+  background: $gray--light;
+  color: $gray;
+  outline: none;
+  border: none;
+}
+
+input[type="checkbox"] {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+textarea {
+  width: 100%;
+  min-height: 112px;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 1.6;
+  background: $gray--light;
+  color: $gray;
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,7 @@
+@mixin wrapper-width($size) {
+  @media only screen and (min-width: $size) {
+    .wrapper {
+      width: $size - 30px;
+    }
+  }
+}
