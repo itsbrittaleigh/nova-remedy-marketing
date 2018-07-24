@@ -1,0 +1,118 @@
+.main-header {
+  position: relative;
+  background: rgba($black, 0.11);
+}
+
+.main-nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__logo {
+  height: 60px;
+}
+
+.main-nav__mobile-menu-button {
+  position: relative;
+  padding: 10px 20px;
+  width: 58px;
+  height: 34px;
+  @media only screen and (min-width: $large) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.main-nav__mobile-menu-button-line {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 18px;
+  opacity: 1;
+  left: 20px;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: $blue--darker;
+  &:nth-child(1) {
+    top: 10px;
+  }
+  &:nth-child(2),
+  &:nth-child(3) {
+    top: 16px;
+  }
+  &:nth-child(4) {
+    top: 22px;
+  }
+}
+
+.main-nav__menu-list {
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: -30px;
+  right: -30px;
+  background: rgba($black, 0.11);
+  opacity: 0;
+  pointer-events: none;
+  transition: ease-in-out 0.4s;
+  @media only screen and (min-width: $large) {
+    pointer-events: initial;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    background: none;
+  }
+}
+
+.main-nav__menu-item {
+  font-size: 16px;
+  color: $white;
+  text-align: center;
+  @media only screen and (min-width: $large) {
+    margin-left: 60px;
+  }
+  @media only screen and (min-width: $xlarge) {
+    margin-left: 80px;
+  }
+}
+
+.main-nav__menu-item-link {
+  display: block;
+  padding: 15px 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.main-nav__menu-item--emphasis {
+  border: 1px solid $white;
+  background-color: $white;
+  color: $blue--darker;
+  text-transform: uppercase;
+  font-weight: $bold;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 44px;
+  margin-top: 15px;
+  transition: 0.4s;
+  &:hover {
+    background: transparent;
+    color: $white;
+  }
+  @media only screen and (min-width: $large) {
+    margin-top: 0;
+  }
+}

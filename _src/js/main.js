@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import store from './store';
 
-Vue.use(VueCarousel);
+Vue.component('navigation-menu', require('./components/Menu.vue').default);
 
 Vue.config.productionTip = false;
 
@@ -12,12 +12,4 @@ new Vue({
   data() {
     return {};
   },
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  ScrollAnimationModule();
-  StickToTopModule();
-  document.addEventListener('scroll', () => {
-    StickToTopModule();
-  });
 });

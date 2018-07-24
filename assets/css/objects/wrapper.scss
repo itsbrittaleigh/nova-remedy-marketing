@@ -1,13 +1,10 @@
 .wrapper {
   position: relative;
   height: 100%;
-  width: 90%;
+  width: calc(100vw - 60px);
   margin: 0 auto;
 }
 
-@include wrapper-width($small);
-@include wrapper-width($medium);
 @include wrapper-width($large);
 @include wrapper-width($xlarge);
 @include wrapper-width($xxlarge);
-@include wrapper-width($xxxlarge);

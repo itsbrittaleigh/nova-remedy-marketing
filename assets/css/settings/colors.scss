@@ -16,13 +16,22 @@ $turquoise--light: #6dcecb;
 /**
  * Blues
  */
-$blue--dark: #294877;
+$blue--darker: #294877;
+$blue--dark: #2896b4;
 $blue: #3f92be;
 $blue--light: #62bee5;
 
 /**
  * Grays
  */
+$black: #000000;
 $gray: #717171;
 $gray--light: #f1f1f1;
 $white: #ffffff;
+
+/**
+ * Gradients
+ */
+$gradient--green: linear-gradient(to right, $green--light, $green--dark);
+$gradient--blue: linear-gradient(to right, $blue--darker, $blue);
+$gradient--lightblue: linear-gradient(to right, $blue--light, $blue--dark);

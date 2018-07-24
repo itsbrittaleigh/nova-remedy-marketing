@@ -14,6 +14,7 @@
     "startOnce": "npm run packOnce & npm run buildOnce"
   },
   "dependencies": {
+    "v-click-outside": "^1.0.5",
     "vue": "^2.5.2",
     "vue-markdown-loader": "^2.4.1",
     "vue-router": "^3.0.1"

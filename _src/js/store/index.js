@@ -4,6 +4,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+import NavigationModule from './modules/NavigationModule';
+
 Vue.use(Vuex);
 
 const state = {};
@@ -16,4 +18,7 @@ export default new Vuex.Store({
   getters,
   actions,
   mutations,
+  modules: {
+    NavigationModule,
+  },
 });

@@ -1,74 +1,74 @@
 @font-face {
-  src: url('../../fonts/Lato-Regular.ttf');
+  src: url('../fonts/Lato-Regular.ttf');
   font-family: 'Lato';
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-Italic.ttf');
+  src: url('../fonts/Lato-Italic.ttf');
   font-family: 'Lato';
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-Bold.ttf');
+  src: url('../fonts/Lato-Bold.ttf');
   font-family: 'Lato';
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-BoldItalic.ttf');
+  src: url('../fonts/Lato-BoldItalic.ttf');
   font-family: 'Lato';
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-Black.ttf');
+  src: url('../fonts/Lato-Black.ttf');
   font-family: 'Lato';
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-BlackItalic.ttf');
+  src: url('../fonts/Lato-BlackItalic.ttf');
   font-family: 'Lato';
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-Light.ttf');
+  src: url('../fonts/Lato-Light.ttf');
   font-family: 'Lato';
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-LightItalic.ttf');
+  src: url('../fonts/Lato-LightItalic.ttf');
   font-family: 'Lato';
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-Hairline.ttf');
+  src: url('../fonts/Lato-Hairline.ttf');
   font-family: 'Lato';
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  src: url('../../fonts/Lato-HairlineItalic.ttf');
+  src: url('../fonts/Lato-HairlineItalic.ttf');
   font-family: 'Lato';
   font-weight: 100;
   font-style: italic;
 }
 
-$font: 'Lato', 'Helvetica', sans-serif;
+$font: 'Lato', 'Times New Roman', sans-serif;
 $heavy: 900;
 $bold: 700;
 $light: 300;
