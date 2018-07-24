@@ -10,5 +10,13 @@
   width: 100%;
   clip-path: ellipse(130% 500px);
   background: $gradient--green;
-  opacity: 0.85;
+}
+
+.hero__image {
+  opacity: 0.15;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  width: 100%;
 }
