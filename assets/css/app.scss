@@ -14,11 +14,13 @@
 
 @import 'elements/body';
 @import 'elements/button';
+@import 'elements/footer';
 @import 'elements/inputs';
 @import 'elements/label';
 @import 'elements/type';
 
 @import 'components/card';
-@import 'components/navigation';
+@import 'components/main-navigation';
+@import 'components/secondary-navigation';
 
 @import 'utilities/colors';
