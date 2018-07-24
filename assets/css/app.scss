@@ -10,11 +10,13 @@
 @import 'generic/box-sizing';
 @import 'generic/normalize';
 
+@import 'objects/sticky-footer';
 @import 'objects/wrapper';
 
 @import 'elements/body';
 @import 'elements/button';
 @import 'elements/footer';
+@import 'elements/header';
 @import 'elements/inputs';
 @import 'elements/label';
 @import 'elements/type';

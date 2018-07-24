@@ -22,19 +22,19 @@
       }"
     >
       <li class="main-nav__menu-item">
-        <a href="" class="main-nav__menu-item-link">Health Assessment</a>
+        <a href="/health-assessment" class="main-nav__menu-item-link">Health Assessment</a>
       </li>
       <li class="main-nav__menu-item">
-        <a href="" class="main-nav__menu-item-link">About</a>
+        <a href="/about" class="main-nav__menu-item-link">About</a>
       </li>
       <li class="main-nav__menu-item">
-        <a href="" class="main-nav__menu-item-link">FAQ</a>
+        <a href="/frequently-asked-questions" class="main-nav__menu-item-link">FAQ</a>
       </li>
       <li class="main-nav__menu-item">
-        <a href="" class="main-nav__menu-item-link">Pricing</a>
+        <a href="/pricing" class="main-nav__menu-item-link">Pricing</a>
       </li>
       <li class="main-nav__menu-item">
-        <a href="" class="main-nav__menu-item-link">Contact</a>
+        <a href="/contact" class="main-nav__menu-item-link">Contact</a>
       </li>
       <li class="main-nav__menu-item">
         <a href="" class="main-nav__menu-item-link main-nav__menu-item--emphasis">Register</a>
