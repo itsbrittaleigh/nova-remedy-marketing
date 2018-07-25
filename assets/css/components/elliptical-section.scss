@@ -1,7 +1,16 @@
 .elliptical-section {
-  clip-path: ellipse(180% 50%);
+  position: relative;
+}
+
+.elliptical-section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 200px);
+  clip-path: ellipse(270% 50%);
   background: $gray--light;
   @media only screen and (min-width: $large) {
-    clip-path: ellipse(130% 50%);
+    clip-path: ellipse(190% 50%);
   }
 }
