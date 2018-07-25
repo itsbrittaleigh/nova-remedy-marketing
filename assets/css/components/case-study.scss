@@ -1,0 +1,73 @@
+.case-study {
+  background: $gradient--lightblue;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 20px;
+  @media only screen and (min-width: $large) {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media only screen and (min-width: #{$large + 140px}) {
+    padding-left: calc(((100vw - #{$large - 30px}) / 2) - 30px);
+  }
+  @media only screen and (min-width: $xlarge) {
+    padding-left: 50px;
+  }
+  @media only screen and (min-width: #{$xlarge + 140px}) {
+    padding-left: calc(((100vw - #{$xlarge - 30px}) / 2) - 30px);
+  }
+  @media only screen and (min-width: 1560px) {
+    padding-left: 170px;
+  }
+}
+
+.case-study__content {
+  @media only screen and (min-width: $large) {
+    width: 50%;
+    flex-shrink: 0;
+  }
+}
+
+.case-study__accordion {
+  max-width: 480px;
+  @media only screen and (min-width: $large) {
+    width: 30%;
+  }
+}
+
+.case-study__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.07;
+}
+
+.case-study__icon {
+  margin-bottom: 15px;
+}
+
+.case-study__tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: normal;
+  color: $blue--darker;
+  font-weight: $bold;
+  margin: 0;
+}
+
+.case-study__title {
+  text-transform: uppercase;
+  font-weight: $light;
+  line-height: 0.95;
+  font-size: 42px;
+  margin: 0;
+  color: $white;
+  @media only screen and (min-width: $large) {
+    font-size: 56px;
+  }
+}

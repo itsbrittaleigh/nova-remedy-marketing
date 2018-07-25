@@ -7,3 +7,11 @@
 
 @include wrapper-width($large);
 @include wrapper-width($xlarge);
+
+.wrapper--wide {
+  position: relative;
+  height: 100%;
+  width: calc(100vw - 60px);
+  max-width: 1500px;
+  margin: 0 auto;
+}

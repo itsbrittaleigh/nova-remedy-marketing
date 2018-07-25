@@ -2,6 +2,7 @@ import Vue from 'vue';
 import store from './store';
 
 Vue.component('navigation-menu', require('./components/Menu.vue').default);
+Vue.component('accordion-section', require('./components/AccordionSection.vue').default);
 
 Vue.config.productionTip = false;
 

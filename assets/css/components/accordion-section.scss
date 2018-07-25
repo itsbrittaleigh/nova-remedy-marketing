@@ -1,0 +1,29 @@
+.accordion-section {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.accordion-section__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: $white;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  box-shadow: 0 0 15px 0 rgba($black, 0.08);
+}
+
+.accordion-section__header {
+  cursor: pointer;
+}
+
+.accordion-section__content {
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s, opacity 0.7s;
+}
