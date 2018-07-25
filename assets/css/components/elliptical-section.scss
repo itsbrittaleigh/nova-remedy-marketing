@@ -1,0 +1,7 @@
+.elliptical-section {
+  clip-path: ellipse(180% 50%);
+  background: $gray--light;
+  @media only screen and (min-width: $large) {
+    clip-path: ellipse(130% 50%);
+  }
+}
