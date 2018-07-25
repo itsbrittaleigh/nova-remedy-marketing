@@ -27,3 +27,19 @@
     color: $blue--darker;
   }
 }
+
+.button--green-text {
+  color: $green;
+  border-color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+.button--darkgreen-text {
+  color: $green--dark;
+  border-color: $white;
+  &:hover {
+    color: $white;
+  }
+}
