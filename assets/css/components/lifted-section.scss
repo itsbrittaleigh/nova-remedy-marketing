@@ -1,0 +1,7 @@
+.lifted-section {
+  position: relative;
+  top: -50px;
+  @media only screen and (min-width: $large) {
+    top: -90px;
+  }
+}

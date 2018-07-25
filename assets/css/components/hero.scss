@@ -1,5 +1,5 @@
 .hero {
-  height: 500px;
+  height: 550px;
   position: relative;
   @media only screen and (min-width: $large) {
     height: 700px;
@@ -11,7 +11,7 @@
   top: -100%;
   height: 200%;
   width: 100%;
-  clip-path: ellipse(180% 500px);
+  clip-path: ellipse(180% 550px);
   background: $gradient--green;
   @media only screen and (min-width: $large) {
     clip-path: ellipse(130% 700px);
