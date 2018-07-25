@@ -13,14 +13,9 @@ input[type="password"] {
   border: none;
 }
 
-input[type="checkbox"] {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
 textarea {
   width: 100%;
-  min-height: 112px;
+  min-height: 200px;
   border-radius: 5px;
   padding: 15px;
   font-size: 17px;
@@ -29,4 +24,7 @@ textarea {
   color: $gray;
   outline: none;
   border: none;
+  @media only screen and (min-width: $medium) {
+    min-height: 270px;
+  }
 }

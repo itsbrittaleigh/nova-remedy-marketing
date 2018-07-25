@@ -1,0 +1,18 @@
+.field {
+  margin-bottom: 15px;
+  @media only screen and (min-width: $medium) {
+    margin-bottom: 25px;
+    width: calc((100% - 25px) / 2);
+    &:last-of-type {
+      width: 100%;
+    }
+  }
+}
+
+.fields {
+  @media only screen and (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

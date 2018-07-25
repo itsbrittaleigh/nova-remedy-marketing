@@ -1,0 +1,55 @@
+.checkbox-field {
+  position: relative;
+  height: 40px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  @media only screen and (min-width: $large) {
+    width: 33%;
+  }
+}
+
+.checkbox-field__input {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-field__input:checked {
+  &+ .checkbox-field__label {
+    &:before {
+      content: url('/assets/images/icons/checkmark-green.png');
+    }
+  }
+}
+
+.checkbox-field__label {
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 50px;
+  display: block;
+  color: $gray;
+  font-weight: normal;
+  text-transform: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: $gray--light;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+}
