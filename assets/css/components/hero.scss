@@ -18,6 +18,14 @@
   }
 }
 
+.hero__mask--blue {
+  background: $gradient--blue;
+}
+
+.hero__mask--lightblue {
+  background: $gradient--lightblue;
+}
+
 .hero__image {
   opacity: 0.15;
   object-fit: cover;
