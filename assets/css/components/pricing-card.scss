@@ -1,0 +1,62 @@
+.pricing-cards {
+  @media only screen and (min-width: $large) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.pricing-card {
+  width: 100%;
+  max-width: 355px;
+  margin: 0 auto 40px;
+  background: $white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 15px 0 rgba($black, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (min-width: $large) {
+    margin-right: 40px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.pricing-card__icon {
+  margin-bottom: 15px;
+}
+
+.pricing-card__heading {
+  font-size: 30px;
+  text-transform: none;
+  font-weight: normal;
+  margin: 0;
+}
+
+.pricing-card__rate {
+  margin: 0;
+  font-weight: $bold;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.pricing-card__button {
+  margin-top: 40px;
+}
+
+.pricing-card__annual-rate {
+  margin: 0;
+  font-weight: $bold;
+  font-style: italic;
+  font-size: 19px;
+}
+
+.pricing-card__divider {
+  background: $green;
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 25px 0;
+}

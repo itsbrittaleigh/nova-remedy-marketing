@@ -23,6 +23,12 @@
   }
 }
 
+.feature-list__item--blue {
+  &:before {
+    background: $blue--dark;
+  }
+}
+
 .feature-list--flex {
   column-count: 2;
 }
