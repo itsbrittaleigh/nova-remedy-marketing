@@ -1,0 +1,26 @@
+.flex-sections {
+  @media only screen and (min-width: $large) {
+    display: flex;
+  }
+}
+
+.flex-sections__section {
+  border-bottom: 1px solid $gray--light;
+  padding: 20px 0;
+  flex: 1;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  @media only screen and (min-width: $large) {
+    padding: 0 40px;
+    border-bottom: none;
+    border-right: 1px solid $gray--light;
+    &:last-of-type {
+      border-right: none;
+      padding-right: 0;
+    }
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}

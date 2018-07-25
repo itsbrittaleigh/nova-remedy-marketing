@@ -32,6 +32,8 @@ h3 {
   font-size: 21px;
   line-height: 1.2;
   color: $blue;
+  font-weight: normal;
+  margin: 0 0 17px;
   @media only screen and (min-width: $large) {
     font-size: 30px;
   }
@@ -50,10 +52,16 @@ a {
   font-style: italic;
   color: inherit;
   text-decoration: none;
+  color: $blue;
 }
 
 p {
   font-size: 17px;
   line-height: 1.6;
   color: $gray;
+}
+
+li {
+  color: $gray;
+  font-size: 16px;
 }

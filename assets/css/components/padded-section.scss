@@ -1,0 +1,6 @@
+.padded-section {
+  padding: 50px 0;
+  @media only screen and (min-width: $large) {
+    padding: 70px 0;
+  }
+}
