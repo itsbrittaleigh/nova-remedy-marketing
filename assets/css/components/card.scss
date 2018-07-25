@@ -11,7 +11,7 @@
   line-height: 1.75;
   font-weight: $heavy;
   color: $green--dark;
-  margin: 0;
+  margin: 10px 0 0;
   text-transform: uppercase;
 }
 
@@ -37,6 +37,13 @@
 .card__copy {
   margin: 0;
   line-height: 1.4;
+  color: $gray;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.card__copy--large {
+  font-size: 20px;
 }
 
 .card--flex {
