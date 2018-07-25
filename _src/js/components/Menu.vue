@@ -72,7 +72,7 @@ export default {
 <style lang="scss" scoped>
 .main-nav__menu-list.open {
   pointer-events: initial;
-  bottom: -316px;
+  bottom: 0;
   opacity: 1;
   padding-bottom: 15px;
 }

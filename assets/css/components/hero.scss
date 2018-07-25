@@ -1,6 +1,9 @@
 .hero {
   height: 500px;
   position: relative;
+  @media only screen and (min-width: $large) {
+    height: 700px;
+  }
 }
 
 .hero__mask {
@@ -8,8 +11,11 @@
   top: -100%;
   height: 200%;
   width: 100%;
-  clip-path: ellipse(130% 500px);
+  clip-path: ellipse(180% 500px);
   background: $gradient--green;
+  @media only screen and (min-width: $large) {
+    clip-path: ellipse(130% 700px);
+  }
 }
 
 .hero__image {
@@ -19,4 +25,27 @@
   top: 50%;
   height: 50%;
   width: 100%;
+}
+
+.hero__content {
+  position: absolute;
+  top: calc(50% + 80px);
+  height: calc(50% - 80px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__description {
+  font-size: 17px;
+  text-align: center;
+  color: $white;
+  max-width: 640px;
+  margin: 0 auto 15px;
+  line-height: 1.4;
+  @media only screen and (min-width: $large) {
+    font-size: 23px;
+  }
 }

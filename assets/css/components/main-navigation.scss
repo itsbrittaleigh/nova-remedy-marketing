@@ -12,7 +12,9 @@
 }
 
 .main-nav__logo {
+  position: relative;
   height: 60px;
+  z-index: 2;
 }
 
 .main-nav__mobile-menu-button {
@@ -20,6 +22,7 @@
   padding: 10px 20px;
   width: 58px;
   height: 34px;
+  z-index: 2;
   @media only screen and (min-width: $large) {
     display: none;
     visibility: hidden;
@@ -50,14 +53,17 @@
 
 .main-nav__menu-list {
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: auto;
-  bottom: 0;
+  bottom: 100%;
   left: -30px;
   right: -30px;
-  background: rgba($black, 0.11);
+  height: 100vh;
+  background: $blue--darker;
   opacity: 0;
   pointer-events: none;
+  padding: 120px 0 15px;
+  z-index: 1;
   transition: ease-in-out 0.4s;
   @media only screen and (min-width: $large) {
     pointer-events: initial;
@@ -67,6 +73,8 @@
     align-items: center;
     position: static;
     background: none;
+    height: auto;
+    padding: 0;
   }
 }
 
