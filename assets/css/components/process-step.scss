@@ -1,0 +1,37 @@
+.process-steps {
+  @media only screen and (min-width: $large) {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.process-step {
+  max-width: 260px;
+  margin: 30px auto;
+  @media only screen and (min-width: $large) {
+    flex: 1;
+  }
+}
+
+.process-step__image-container {
+  @media only screen and (min-width: $large) {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.process-step__image {
+  display: block;
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+.process-step__title {
+  margin: 0;
+  text-align: center;
+}

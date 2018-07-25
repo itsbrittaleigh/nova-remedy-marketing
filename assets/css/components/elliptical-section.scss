@@ -1,5 +1,9 @@
 .elliptical-section {
   position: relative;
+  padding-top: 50px;
+  @media only screen and (min-width: $large) {
+    padding-top: 70px;
+  }
 }
 
 .elliptical-section__background {
