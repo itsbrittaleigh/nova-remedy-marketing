@@ -79,7 +79,6 @@ export default {
       'storeAnswer',
     ]),
     nextQuestion() {
-      
       if (this.nextQuestionIndex < this.questions.length) {
         if (this.questions[this.nextQuestionIndex].userAnswer) this.currentQuestionIsAnswered = true;
         else this.currentQuestionIsAnswered = false;
@@ -95,6 +94,9 @@ export default {
     },
     submit() {
       console.log(this.userAnswers);
+      // put in form action
+      // ideally the form action would return data and redirect
+      window.location = '/health-assessment/results';
     },
     updateAnswer(value) {
       this.storeAnswer({
