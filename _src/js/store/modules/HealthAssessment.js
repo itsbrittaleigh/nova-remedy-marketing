@@ -141,11 +141,21 @@ const getters = {
       if(question.userAnswer) answers.push(question.userAnswer);
       else answers.push(null);
     });
+    return answers;
   },
 };
 
-const actions = {};
-const mutations = {};
+const actions = {
+  storeAnswer(context, answer) {
+    context.commit('storeAnswer', answer);
+  },
+};
+
+const mutations = {
+  storeAnswer(state, answer) {
+    state.questions[answer.questionIndex].userAnswer = answer.answer;
+  },
+};
 
 export default {
   state,

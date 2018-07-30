@@ -22,13 +22,11 @@
 </template>
 
 <script>
+import FieldMixin from '../../mixins/FieldMixin.js';
+
 export default {
   name: 'CheckboxField',
-  props: {
-    question: {
-      required: true,
-    },
-  },
+  mixins: [FieldMixin],
   data() {
     return {
       localValue: [],

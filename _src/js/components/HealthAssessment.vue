@@ -5,19 +5,19 @@
       class="assessment__section"
       v-for="(question, index) in questions"
       :key="index"
-      v-show="index === currentQuestion"
+      v-show="index === currentQuestionIndex"
     >
       <component
         :is="`field-${question.type}`"
         :question="question"
-        @answered="currentQuestionIsAnswered = true"
+        @updated="updateAnswer"
       ></component>
     </div>
     <div class="flex-container flex-center m-t-30">
       <div class="assessment__button-container m-r-20">
         <button
           class="assessment__button assessment__button--secondary"
-          v-if="currentQuestion !== 0"
+          v-if="currentQuestionIndex !== 0"
           @click="previousQuestion()"
         >
           Previous
@@ -29,7 +29,7 @@
           v-if="currentQuestionIsAnswered"
           @click="nextQuestion()"
         >
-          {{ currentQuestion + 1 === questions.length ? 'Submit' : 'Next' }}
+          {{ currentQuestionIndex + 1 === questions.length ? 'Submit' : 'Next' }}
         </button>
       </div>
     </div>
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import BloodPressure from './fields/BloodPressure.vue';
 import Checkbox from './fields/Checkbox.vue';
 import Height from './fields/Height.vue';
@@ -48,14 +48,7 @@ export default {
   name: 'HealthAssessment',
   data() {
     return {
-      gender: '',
-      age: '',
-      weight: '',
-      height: '',
-      bloodPressure: '',
-      healthHistory: '',
-      exerciseHabits: '',
-      currentQuestion: 0,
+      currentQuestionIndex: 0,
       currentQuestionIsAnswered: false,
     };
   },
@@ -72,24 +65,42 @@ export default {
       'userAnswers',
     ]),
     currentQuestionHuman() {
-      return this.currentQuestion + 1;
+      return this.currentQuestionIndex + 1;
+    },
+    nextQuestionIndex() {
+      return this.currentQuestionIndex + 1;
+    },
+    previousQuestionIndex() {
+      return this.currentQuestionIndex - 1;
     },
   },
   methods: {
+    ...mapActions([
+      'storeAnswer',
+    ]),
     nextQuestion() {
-      this.storeAnswer();
-      this.currentQuestionIsAnswered = false;
-      if (this.currentQuestion + 1 < this.questions.length) this.currentQuestion += 1;
+      if (this.questions[this.nextQuestionIndex].userAnswer) this.currentQuestionIsAnswered = true;
+      else this.currentQuestionIsAnswered = false;
+      
+      if (this.nextQuestionIndex < this.questions.length) this.currentQuestionIndex += 1;
       else this.submit();
     },
     previousQuestion() {
-      this.currentQuestion -= 1;
-    },
-    storeAnswer() {
-      console.log('stored');
+      if (this.questions[this.previousQuestionIndex].userAnswer) this.currentQuestionIsAnswered = true;
+      else this.currentQuestionIsAnswered = false;
+
+      this.currentQuestionIndex -= 1;
     },
     submit() {
       console.log('submit');
+    },
+    updateAnswer(value) {
+      this.storeAnswer({
+        'questionIndex': this.currentQuestionIndex,
+        'answer': value,
+      });
+      if(value) this.currentQuestionIsAnswered = true;
+      else this.currentQuestionIsAnswered = false;
     },
   },
 };

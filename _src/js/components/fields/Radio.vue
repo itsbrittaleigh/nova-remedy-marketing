@@ -13,7 +13,6 @@
           :id="choice.value"
           :value="choice.value"
           class="radio-field__input"
-          @change="$emit('answered')"
         >
         <label :for="choice.value" class="radio-field__label">{{ choice.label }}</label>
       </div>
@@ -22,13 +21,11 @@
 </template>
 
 <script>
+import FieldMixin from '../../mixins/FieldMixin.js';
+
 export default {
   name: 'RadioField',
-  props: {
-    question: {
-      required: true,
-    },
-  },
+  mixins: [FieldMixin],
   data() {
     return {
       localValue: '',

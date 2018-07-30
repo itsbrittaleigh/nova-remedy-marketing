@@ -17,13 +17,11 @@
 </template>
 
 <script>
+import FieldMixin from '../../mixins/FieldMixin.js';
+
 export default {
   name: 'BloodPressureField',
-  props: {
-    question: {
-      required: true,
-    },
-  },
+  mixins: [FieldMixin],
   data() {
     return {
       systolic: '',
@@ -33,7 +31,16 @@ export default {
   },
   computed: {
     bloodPressure() {
-      return `${this.systolic}/${this.diastolic}`;
+      if (this.systolic && this.diastolic) return `${this.systolic}/${this.diastolic}`;
+      else return '';
+    },
+  },
+  watch: {
+    'bloodPressure': {
+      handler(val, oldVal) {
+        this.localValue = val;
+      },
+      deep: true,
     },
   },
 };

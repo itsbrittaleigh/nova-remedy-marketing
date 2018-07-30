@@ -3,26 +3,24 @@
     <p class="assessment__question">{{ question.question }}</p>
     <div class="assessment__field-group">
       <div class="assessment__choice">
-        <input type="tel" v-model="feet" class="text-center" @input="$emit('answered')">
+        <input type="tel" v-model="feet" class="text-center">
         <label :for="feet" class="assessment__field-label">feet</label>
       </div>
       <div class="assessment__choice">
-        <input type="tel" v-model="inches" class="text-center" @input="$emit('answered')">
+        <input type="tel" v-model="inches" class="text-center">
         <label :for="inches" class="assessment__field-label">inches</label>
       </div>
-      <input type="hidden" v-model="height">
+      <input type="hidden" v-model="localValue">
     </div>
   </div>
 </template>
 
 <script>
+import FieldMixin from '../../mixins/FieldMixin.js';
+
 export default {
   name: 'HeightField',
-  props: {
-    question: {
-      required: true,
-    },
-  },
+  mixins: [FieldMixin],
   data() {
     return {
       feet: '',
@@ -32,7 +30,16 @@ export default {
   },
   computed: {
     height() {
-      return `${this.feet}' ${this.inches}"`;
+      if(this.feet && this.inches) return `${this.feet}' ${this.inches}"`;
+      else return '';
+    },
+  },
+  watch: {
+    'height': {
+      handler(val, oldVal) {
+        this.localValue = val;
+      },
+      deep: true,
     },
   },
 };
