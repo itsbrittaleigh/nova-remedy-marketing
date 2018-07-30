@@ -13,7 +13,6 @@
           :id="choice.value"
           :value="choice.value"
           class="checkbox-field__input"
-          @change="$emit('answered')"
         >
         <label :for="choice.value" class="checkbox-field__label color-white">{{ choice.label }}</label>
       </div>

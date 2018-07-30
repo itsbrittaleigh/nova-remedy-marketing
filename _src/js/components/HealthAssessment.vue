@@ -79,10 +79,12 @@ export default {
       'storeAnswer',
     ]),
     nextQuestion() {
-      if (this.questions[this.nextQuestionIndex].userAnswer) this.currentQuestionIsAnswered = true;
-      else this.currentQuestionIsAnswered = false;
       
-      if (this.nextQuestionIndex < this.questions.length) this.currentQuestionIndex += 1;
+      if (this.nextQuestionIndex < this.questions.length) {
+        if (this.questions[this.nextQuestionIndex].userAnswer) this.currentQuestionIsAnswered = true;
+        else this.currentQuestionIsAnswered = false;
+        this.currentQuestionIndex += 1;
+      }
       else this.submit();
     },
     previousQuestion() {
@@ -92,7 +94,7 @@ export default {
       this.currentQuestionIndex -= 1;
     },
     submit() {
-      console.log('submit');
+      console.log(this.userAnswers);
     },
     updateAnswer(value) {
       this.storeAnswer({

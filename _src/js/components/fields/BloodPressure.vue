@@ -11,7 +11,6 @@
         <input type="tel" v-model="diastolic" class="text-center">
         <label :for="diastolic" class="assessment__field-label">(diastolic)</label>
       </div>
-      <input type="hidden" v-model="bloodPressure">
     </div>
   </div>
 </template>

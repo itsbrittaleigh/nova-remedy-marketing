@@ -136,12 +136,11 @@ const state = {
 const getters = {
   questions: state => state.questions,
   userAnswers: (state) => {
-    let answers = [];
+    let data = {};
     _.forEach(state.questions, (question) => {
-      if(question.userAnswer) answers.push(question.userAnswer);
-      else answers.push(null);
+      data[question.name] = question.userAnswer;
     });
-    return answers;
+    return data;
   },
 };
 

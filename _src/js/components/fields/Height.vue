@@ -10,7 +10,6 @@
         <input type="tel" v-model="inches" class="text-center">
         <label :for="inches" class="assessment__field-label">inches</label>
       </div>
-      <input type="hidden" v-model="localValue">
     </div>
   </div>
 </template>
