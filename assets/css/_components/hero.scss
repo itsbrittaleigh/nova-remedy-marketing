@@ -2,7 +2,17 @@
   height: 550px;
   position: relative;
   @media only screen and (min-width: $large) {
-    height: 700px;
+    height: 800px;
+  }
+}
+
+.hero--large {
+  height: 800px;
+  .hero__mask {
+    clip-path: ellipse(180% 800px);
+  }
+  @media only screen and (min-width: $large) {
+    clip-path: ellipse(130% 700px);
   }
 }
 
@@ -35,15 +45,31 @@
   width: 100%;
 }
 
-.hero__content {
+.hero__wrapper {
+  height: calc(50% - 103px); // header height
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: calc(50% + 80px);
-  height: calc(50% - 80px);
+  bottom: 0;
+  left: 30px;
+  @media only screen and (min-width: $large) {
+    left: calc((100vw - 962px) / 2);
+  }
+  @media only screen and (min-width: $xlarge) {
+    left: calc((100vw - 1170px) / 2);
+  }
+}
+
+.hero__content {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -50px;
+  @media only screen and (min-width: $large) {
+    margin-top: -150px;
+  }
 }
 
 .hero__description {

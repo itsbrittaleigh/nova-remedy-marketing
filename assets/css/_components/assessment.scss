@@ -1,0 +1,101 @@
+.assessment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assessment__counter {
+  color: $blue--lighter;
+  font-weight: $heavy;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  @media only screen and (min-width: $large) {
+    font-size: 22px;
+  }
+}
+
+.assessment__question {
+  font-size: 35px;
+  line-height: 1.2;
+  color: $white;
+  text-align: center;
+  font-weight: normal;
+  margin: 10px 0;
+  @media only screen and (min-width: $large) {
+    font-size: 50px;
+  }
+}
+
+.assessment__button-container {
+  width: 150px;
+  height: 32px;
+}
+
+.assessment__button {
+  background: $white;
+  color: $gray;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  font-size: 14px;
+}
+
+.assessment__button--secondary {
+  background: rgba($black, 0.18);
+  color: $white;
+}
+
+.assessment__choices {
+  @media only screen and (min-width: $large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+.assessment__choices--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 30px;
+  .checkbox-field {
+    margin-right: 0;
+    width: 50%;
+    @media only screen and (min-width: $medium) {
+      width: 20%;
+    }
+  }
+}
+
+.assessment__field-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.assessment__choice {
+  margin-right: 20px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: $large) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.assessment__field-label {
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+  display: block;
+  color: $white;
+  font-weight: normal;
+  text-transform: none;
+  display: flex;
+  justify-content: center;
+}
