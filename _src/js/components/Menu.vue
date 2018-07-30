@@ -27,9 +27,9 @@
       <li class="main-nav__menu-item">
         <a href="/about" class="main-nav__menu-item-link">About</a>
       </li>
-      <li class="main-nav__menu-item">
+      <!-- <li class="main-nav__menu-item">
         <a href="/frequently-asked-questions" class="main-nav__menu-item-link">FAQ</a>
-      </li>
+      </li> -->
       <li class="main-nav__menu-item">
         <a href="/pricing" class="main-nav__menu-item-link">Pricing</a>
       </li>
