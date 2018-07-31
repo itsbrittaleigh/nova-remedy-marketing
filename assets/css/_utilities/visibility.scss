@@ -5,6 +5,12 @@
     display: block;
     visibility: visible;
   }
+  &.visible-on-tablet {
+    @media only screen and (min-width: $medium) {
+      display: block;
+      visibility: visible;
+    }
+  }
 }
 
 .hidden-on-desktop {
