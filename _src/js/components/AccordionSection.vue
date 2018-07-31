@@ -1,10 +1,11 @@
 <template>
   <div
     :class="{
-      'accordion-section card card--collapsible': true,
-      active: isActive
+      'accordion-section': true,
+      active: isActive,
+      'card card--collapsible': isCard,
     }">
-    <div class="accordion-section__header" @click="toggle">
+    <div class="accordion-section__header" @click.prevent="toggle">
       <i class="accordion-section__icon">+</i>
       <slot name="accordion-header"></slot>
     </div>
@@ -19,6 +20,11 @@ export default {
   name: 'AccordionSection',
   props: {
     selected: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    isCard: {
       type: Boolean,
       required: false,
       default: false,
