@@ -20,6 +20,15 @@
   }
 }
 
+.button--white {
+  background-color: $white;
+  border-color: $white;
+  color: $gray;
+  &:hover {
+    color: $white;
+  }
+}
+
 .button--blue {
   background-color: $blue--darker;
   border-color: $blue--darker;

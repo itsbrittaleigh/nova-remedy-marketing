@@ -1,0 +1,15 @@
+.hidden-on-mobile {
+  display: none;
+  visibility: hidden;
+  @media only screen and (min-width: $large) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.hidden-on-desktop {
+  @media only screen and (min-width: $large) {
+    display: none;
+    visibility: hidden;
+  }
+}
