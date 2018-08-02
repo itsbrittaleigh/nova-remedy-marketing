@@ -41,3 +41,4 @@ $white: #ffffff;
 $gradient--green: linear-gradient(to right, $green--light, $green--dark);
 $gradient--blue: linear-gradient(to right, $blue--darker, $blue);
 $gradient--lightblue: linear-gradient(to right, $blue--light, $blue--dark);
+$radial-gradient--green: radial-gradient(circle at bottom, $green--light, $green--dark);

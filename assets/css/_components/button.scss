@@ -17,6 +17,9 @@
   &:hover {
     background: transparent;
     color: $green;
+    &:after {
+      width: 0;
+    }
   }
 }
 
