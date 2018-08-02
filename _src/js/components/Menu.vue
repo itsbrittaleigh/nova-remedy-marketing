@@ -5,7 +5,7 @@
   >
     <button
       :class="{
-        'main-nav__mobile-menu-button bg-white': true,
+        'main-nav__mobile-menu-button': true,
         'open': menuIsOpen,
       }"
       @click="toggleMenu()"
@@ -37,7 +37,7 @@
         <a href="/contact" class="main-nav__menu-item-link">Contact</a>
       </li>
       <li class="main-nav__menu-item">
-        <a href="" class="main-nav__menu-item-link main-nav__menu-item--emphasis">Register</a>
+        <a href="" class="main-nav__menu-item-link main-nav__menu-item--emphasis">Start Free Trial</a>
       </li>
     </span>
   </ul>
@@ -55,6 +55,7 @@ export default {
   computed: {
     ...mapGetters([
       'menuIsOpen',
+      'menuIsTransparent',
     ]),
   },
   directives: {

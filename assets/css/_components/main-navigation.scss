@@ -1,5 +1,5 @@
 .main-nav {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,10 +11,28 @@
   padding: 0;
 }
 
-.main-nav__logo {
+.main-nav__logo-link {
   position: relative;
-  height: 60px;
+  height: 70px;
+  width: 132px;
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 2;
+}
+
+.main-nav__logo--green {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.main-nav__logo--white {
+  opacity: 1;
+  transition: 0.4s;
 }
 
 .main-nav__mobile-menu-button {
@@ -22,6 +40,7 @@
   padding: 10px 20px;
   width: 58px;
   height: 34px;
+  background: white;
   z-index: 2;
   @media only screen and (min-width: $large) {
     display: none;
@@ -91,15 +110,34 @@
 }
 
 .main-nav__menu-item-link {
+  position: relative;
   display: block;
   padding: 15px 0;
   font-style: normal;
   font-weight: normal;
   color: $white;
+  transition: 0.4s;
+  @media only screen and (min-width: $large) {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: $white;
+      transition: 0.4s;
+    }
+    &:hover {
+      &:after  {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .main-nav__menu-item--emphasis {
-  border: 1px solid $white;
+  border: 2px solid $white;
   background-color: $white;
   color: $blue--darker;
   text-transform: uppercase;

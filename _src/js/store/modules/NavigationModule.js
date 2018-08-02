@@ -1,9 +1,11 @@
 const state = {
   menuIsOpen: false,
+  menuIsTransparent: true,
 };
 
 const getters = {
   menuIsOpen: state => state.menuIsOpen,
+  menuIsTransparent: state => state.menuIsTransparent,
 };
 
 const actions = {
@@ -13,6 +15,12 @@ const actions = {
   closeMenu(context) {
     context.commit('closeMenu');
   },
+  transparentizeMenu(context) {
+    context.commit('transparentizeMenu');
+  },
+  opacifyMenu(context) {
+    context.commit('opacifyMenu');
+  },
 };
 
 const mutations = {
@@ -21,6 +29,12 @@ const mutations = {
   },
   closeMenu(state) {
     state.menuIsOpen = false;
+  },
+  transparentizeMenu(state) {
+    state.menuIsTransparent = true;
+  },
+  opacifyMenu(state) {
+    state.menuIsTransparent = false;
   },
 };
 
