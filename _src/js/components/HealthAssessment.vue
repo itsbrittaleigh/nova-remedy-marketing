@@ -25,8 +25,11 @@
       </div>
       <div class="assessment__button-container">
         <button
-          class="assessment__button"
-          v-if="currentQuestionIsAnswered"
+          :class="{
+            'assessment__button': true,
+            'assessment__button--active': currentQuestionIsAnswered,
+          }"
+          :disabled="!currentQuestionIsAnswered"
           @click="nextQuestion()"
         >
           {{ currentQuestionIndex + 1 === questions.length ? 'Submit' : 'Next' }}

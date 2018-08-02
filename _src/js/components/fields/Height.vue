@@ -3,11 +3,25 @@
     <p class="assessment__question">{{ question.question }}</p>
     <div class="assessment__field-group">
       <div class="assessment__choice">
-        <input type="tel" v-model="feet" class="text-center">
+        <input
+          type="tel"
+          v-model="feet"
+          :class="{
+            'assessment__input text-center': true,
+            'assessment__input--filled': feet,
+          }"
+        >
         <label :for="feet" class="assessment__field-label">feet</label>
       </div>
       <div class="assessment__choice">
-        <input type="tel" v-model="inches" class="text-center">
+        <input
+          type="tel"
+          v-model="inches"
+          :class="{
+            'assessment__input text-center': true,
+            'assessment__input--filled': inches,
+          }"
+        >
         <label :for="inches" class="assessment__field-label">inches</label>
       </div>
     </div>

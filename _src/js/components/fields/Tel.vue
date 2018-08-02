@@ -2,7 +2,14 @@
   <div class="assessment__field">
     <p class="assessment__question">{{ question.question }}</p>
     <div class="assessment__choices">
-      <input type="tel" v-model="localValue" class="text-center">
+      <input
+        type="tel"
+        v-model="localValue"
+        :class="{
+          'assessment__input text-center': true,
+          'assessment__input--filled': question.userAnswer,
+        }"
+      >
     </div>
   </div>
 </template>

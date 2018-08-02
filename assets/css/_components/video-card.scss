@@ -69,7 +69,6 @@
 }
 
 .video-card--narrow {
-  max-width: 375px;
   margin: 0 auto 40px;
   @media only screen and (min-width: $medium) {
     display: block;
@@ -90,7 +89,7 @@
 }
 
 .video-card--condensed {
-  max-width: 280px;
+  max-width: 270px;
   margin: 0 auto 20px;
   @media only screen and (min-width: $medium) {
     display: block;
