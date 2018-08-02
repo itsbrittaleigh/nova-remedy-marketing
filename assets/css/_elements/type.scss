@@ -18,12 +18,12 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 55px;
   color: $green--dark;
   font-weight: $light;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 30px;
+  margin: 0 0 10px;
   @media only screen and (min-width: $large) {
     font-size: 65px;
   }
@@ -34,7 +34,7 @@ h3 {
   line-height: 1.2;
   color: $blue;
   font-weight: normal;
-  margin: 0 0 17px;
+  margin: 0 0 10px;
   @media only screen and (min-width: $large) {
     font-size: 30px;
   }
@@ -43,7 +43,7 @@ h3 {
 h4 {
   font-size: 16px;
   line-height: 1.75;
-  font-weight: $heavy;
+  font-weight: $bold;
   color: $green--dark;
   text-transform: uppercase;
 }
