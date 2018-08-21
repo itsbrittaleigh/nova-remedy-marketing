@@ -1,0 +1,39 @@
+.main-header {
+  transition: 0.4s;
+}
+.main-header.opaque {
+  background: $white;
+  box-shadow: 0 0 15px 0 rgba($black, 0.08);
+  .main-nav__logo--white {
+    opacity: 0;
+  }
+  .main-nav__logo--green {
+    opacity: 1;
+  }
+  .main-nav__mobile-menu-button {
+    background: $blue--darker;
+  }
+  .main-nav__mobile-menu-button-line {
+    background: $white;
+  }
+  @media only screen and (min-width: $large) {
+    .main-nav__menu-item-link {
+      color: $gray;
+      &:hover {
+        color: $green;
+        &:after {
+          background: $green;
+        }
+      }
+    }
+    .main-nav__menu-item--emphasis {
+      background: $green;
+      border-color: $green;
+      color: $white;
+      &:hover{
+        background: $white;
+        color: $green;
+      }
+    }
+  }
+}

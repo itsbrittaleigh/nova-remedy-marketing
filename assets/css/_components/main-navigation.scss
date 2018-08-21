@@ -166,3 +166,30 @@
     margin-top: 0;
   }
 }
+
+.main-nav__menu-list.open {
+  pointer-events: initial;
+  bottom: 0;
+  opacity: 1;
+  padding-bottom: 15px;
+}
+.main-nav__mobile-menu-button.open {
+  .main-nav__mobile-menu-button-line {
+    &:nth-child(1) {
+      top: 10px;
+      width: 0;
+      left: 50%;
+    }
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    &:nth-child(4) {
+      top: 10px;
+      width: 0;
+      left: 50%;
+    }
+  }
+}

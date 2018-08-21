@@ -17,7 +17,7 @@
 .checkbox-field__input:checked {
   &+ .checkbox-field__label {
     &:before {
-      content: url('/assets/images/icons/checkmark-green.png');
+      content: url('~/assets/images/icons/checkmark-green.png');
     }
   }
 }
