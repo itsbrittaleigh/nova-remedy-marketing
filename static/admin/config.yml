@@ -210,3 +210,25 @@ collections:
                   - {label: "Contact", value: "contact"}
                   - {label: "Health Assessment", value: "health-assessment"}
                   - {label: "Pricing", value: "pricing"}
+      - label: "Pricing Page"
+        name: "pricing"
+        file: "content/_pricing.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+          - label: "Packages"
+            name: "packages"
+            widget: "list"
+            fields:
+              - {label: "Package Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Cost per month", name: "month", widget: "string"}
+              - {label: "Cost per year", name: "year", widget: "string"}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}

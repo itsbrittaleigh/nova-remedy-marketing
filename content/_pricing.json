@@ -1,0 +1,56 @@
+{
+  "header": {
+    "headline": "Pricing",
+    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet."
+  },
+  "packages": [
+    {
+      "name": "Package name",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "month": "$29",
+      "year": "$250",
+      "features": [
+        "Lorem ipsum dolor",
+        "sit amet consectetur",
+        "adipisicing elit",
+        "Voluptatibus exercitationem",
+        "rerum placeat eum",
+        "officiis tempora dicta",
+        "impedit illo deleniti",
+        "necessitatibus quis aliquam"
+      ]
+    },
+    {
+      "name": "Package name",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "month": "$39",
+      "year": "$350",
+      "features": [
+        "Lorem ipsum dolor",
+        "sit amet consectetur",
+        "adipisicing elit",
+        "Voluptatibus exercitationem",
+        "rerum placeat eum",
+        "officiis tempora dicta",
+        "impedit illo deleniti",
+        "necessitatibus quis aliquam"
+      ]
+    },
+    {
+      "name": "Package name",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "month": "$49",
+      "year": "$450",
+      "features": [
+        "Lorem ipsum dolor",
+        "sit amet consectetur",
+        "adipisicing elit",
+        "Voluptatibus exercitationem",
+        "rerum placeat eum",
+        "officiis tempora dicta",
+        "impedit illo deleniti",
+        "necessitatibus quis aliquam"
+      ]
+    }
+  ]
+}
