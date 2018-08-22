@@ -1,28 +1,39 @@
 {
   "header": {
     "headline": "About",
-    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet."
+    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.",
+    "image": "/images/uploads/about.jpg"
   },
   "props": [
     {
       "title": "Increase your energy levels",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum."
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "icon": "/images/uploads/lotus-icon-green.png",
+      "image": "/images/uploads/contact.jpg"
     },
     {
       "title": "Decrease your blood pressure",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum."
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "icon": "/images/uploads/lotus-icon-blue.png",
+      "image": "/images/uploads/about.jpg"
     },
     {
       "title": "Build a custom nutrition plan",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum."
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "icon": "/images/uploads/lotus-icon-green.png",
+      "image": "/images/uploads/health-assessment.jpg"
     },
     {
       "title": "Save money on medications",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum."
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "icon": "/images/uploads/lotus-icon-blue.png",
+      "image": "/images/uploads/home.jpg"
     },
     {
       "title": "Interactive",
-      "description": "Coaching from doctors and lives chats with medical professionals."
+      "description": "Coaching from doctors and lives chats with medical professionals.",
+      "icon": "/images/uploads/lotus-icon-green.png",
+      "image": "/images/uploads/pricing.jpg"
     }
   ],
   "overview": {
@@ -33,6 +44,7 @@
         "title": "Nova Remedy's Story",
         "snippet": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/lotus-icon-green.png",
         "statistic": {
           "number": "95%",
           "description": "Text description about number"
@@ -42,6 +54,7 @@
         "title": "About Headline",
         "snippet": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/lotus-icon-blue.png",
         "statistic": {
           "number": "14",
           "description": "Text description about number"
@@ -51,6 +64,7 @@
         "title": "Headline about the Video Process",
         "snippet": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/lotus-icon-green.png",
         "statistic": {
           "number": "1200+",
           "description": "Text description about number"
@@ -64,15 +78,18 @@
     "steps": [
       {
         "title": "Take the health assessment",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/assessment2.png"
       },
       {
         "title": "Receive your personalized plan",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/assessment.png"
       },
       {
         "title": "Begin your new health journey",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!"
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/journey2.png"
       }
     ]
   },
@@ -83,32 +100,38 @@
       {
         "name": "Team Member",
         "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member1.png"
       },
       {
         "name": "Team Member",
         "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member2.png"
       },
       {
         "name": "Team Member",
         "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member3.png"
       },
       {
         "name": "Team Member",
         "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member4.png"
       },
       {
         "name": "Team Member",
         "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member5.png"
       },
       {
         "name": "Team Member",
         "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member6.png"
       }
     ]
   },
