@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__mask">
-        <img src="~/assets/images/covers/home.jpg" alt="" class="hero__image">
+        <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
             <h1>{{ header.headline }}</h1>
@@ -22,8 +22,7 @@
             :key="index"
             class="card card--flex"
           >
-            <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-            <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
+            <img :src="prop.image" class="card__icon">
             <span
               :class="{
                 'card__divider': true,
@@ -71,7 +70,7 @@
             <h3>{{ overview.doctor.headline }}</h3>
             <p>{{ overview.doctor.description }}</p>
             <div class="testimonial">
-              <img src="~/assets/images/headshots/generic-doctor.png" alt="" class="testimonial__image">
+              <img :src="overview.doctor.information.image" alt="" class="testimonial__image">
               <div class="testimonial__content">
                 <p class="testimonial__name">{{ overview.doctor.information.name }}</p>
                 <p class="testimonial__title">{{ overview.doctor.information.title }}</p>
@@ -94,7 +93,7 @@
           :key="index"
           class="video-card"
         >
-          <img src="~/assets/images/video-stills/video1.jpg" alt="" class="video-card__image">
+          <img :src="video.image" alt="" class="video-card__image">
           <div class="video-card__content">
             <h3 :class="{
               'video-card__title': true,
@@ -146,7 +145,7 @@
             class="process-step"
           >
             <div class="process-step__image-container">
-              <img src="~/assets/images/icons/survey.png" alt="" class="process-step__image">
+              <img :src="step.image" alt="" class="process-step__image">
             </div>
             <h4
               :class="{

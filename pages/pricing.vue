@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__mask hero__mask--lightblue">
-        <img src="~/assets/images/covers/pricing.jpg" alt="" class="hero__image">
+        <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
             <h1>{{ header.headline }}</h1>
@@ -21,8 +21,7 @@
             :key="index"
             class="pricing-card"
           >
-            <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="" class="pricing-card__icon">
-            <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="" class="pricing-card__icon">
+            <img :src="tier.image" class="pricing-card__icon">
             <h2 :class="{
               'pricing-card__heading': true,
               'color-darkblue': index % 2 !== 0,

@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__mask hero__mask--lightblue">
-        <img src="~/assets/images/covers/about.jpg" alt="" class="hero__image">
+        <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
             <h1>{{ header.headline }}</h1>
@@ -21,9 +21,8 @@
             :key="index"
             class="card card--flex"
           >
-            <img src="~/assets/images/value-props/prop1.png" alt="" class="card__profile-image hidden-on-mobile m-b-20">
-            <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
-            <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon hidden-on-desktop">
+            <img :src="prop.image" alt="" class="card__profile-image hidden-on-mobile m-b-20">
+            <img :src="prop.icon" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
             <span class="card__divider"></span>
             <div class="card__content">
               <h3
@@ -56,8 +55,7 @@
           :key="index"
           class="card card--flex card--flex-on-desktop m-b-20"
         >
-          <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-          <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
+          <img :src="card.image" class="card__icon">
           <span :class="{ 
             'card__divider': true,
             'bg-darkblue': index % 2 !== 0,
@@ -105,7 +103,7 @@
               {{ index + 1 }}
             </p>
             <div class="step__image-container">
-              <img src="~/assets/images/process/assessment.png" alt="" class="step__image">
+              <img :src="step.image" alt="" class="step__image">
             </div>
             <div class="step__content">
               <h3
@@ -136,7 +134,7 @@
             :key="index"
             class="team-members__member-container"
           >
-            <img src="~/assets/images/team-members/member1.png" alt="" class="team-members__profile-image">
+            <img :src="member.image" alt="" class="team-members__profile-image">
             <div class="team-members__member-content">
               <h3 class="team-members__member-name is-marginless">{{ member.name }}</h3>
               <p class="team-members__member-title is-marginless">{{ member.title }}</p>

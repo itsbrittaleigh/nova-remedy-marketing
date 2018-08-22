@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__mask hero__mask--lightblue">
-        <img src="~/assets/images/covers/contact.jpg" alt="" class="hero__image">
+        <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
             <h1>{{ header.headline }}</h1>
