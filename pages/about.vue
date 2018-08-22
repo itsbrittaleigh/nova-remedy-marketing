@@ -247,7 +247,7 @@
         </div>
       </div>
     </section>
-    CTA
+    <!-- CTA -->
     <section class="bg-green-gradient p-t-100 p-b-100">
       <div class="wrapper flex-container flex-center">
         <nuxt-link to="/health-assessment" class="button button--white">Start your health journey today</nuxt-link>

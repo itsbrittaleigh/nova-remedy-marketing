@@ -6,7 +6,7 @@
         <img src="~/assets/images/covers/home.jpg" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
-            <h1>Headline here</h1>
+            <h1>{{ headline }}</h1>
             <p class="hero__description">Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.</p>
             <nuxt-link to="/health-assessment" class="button button--blue m-t-20">Start your health journey today</nuxt-link>
           </div>
@@ -358,6 +358,10 @@
 import AccordionSection from '~/components/AccordionSection.vue';
 
 export default {
+  async asyncData({ params }) {
+    const pageData = await import('~/content/_index.json');
+    return pageData;
+  },
   data() {
     return {};
   },

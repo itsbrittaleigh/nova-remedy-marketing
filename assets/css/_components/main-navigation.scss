@@ -122,6 +122,9 @@
   font-weight: normal;
   color: $white;
   transition: 0.4s;
+  &:after {
+    background: none;
+  }
   @media only screen and (min-width: $large) {
     &:after {
       content: '';
@@ -134,12 +137,20 @@
       transition: 0.4s;
     }
     &:hover {
+      color: white;
       &:after  {
         width: 100%;
       }
     }
   }
+  &.nuxt-link-active {
+    &:after {
+      width: 100%;
+      background: $green;
+    }
+  }
 }
+
 
 .main-nav__menu-item--emphasis {
   border: 2px solid $white;

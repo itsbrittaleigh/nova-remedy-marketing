@@ -7,6 +7,7 @@
   transition: 0.4s;
   @media only screen and (min-width: $medium) {
     display: flex;
+    max-height: 340px;
   }
   &:hover {
     box-shadow: 0 0 20px 0 rgba($black, 0.3);
@@ -72,6 +73,7 @@
   margin: 0 auto 40px;
   @media only screen and (min-width: $medium) {
     display: block;
+    max-height: none;
   }
   @media only screen and (min-width: $large) {
     margin-right: 20px;
