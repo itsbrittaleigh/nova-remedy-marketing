@@ -6,9 +6,9 @@
         <img src="~/assets/images/covers/home.jpg" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
-            <h1>{{ headline }}</h1>
-            <p class="hero__description">Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.</p>
-            <nuxt-link to="/health-assessment" class="button button--blue m-t-20">Start your health journey today</nuxt-link>
+            <h1>{{ header.headline }}</h1>
+            <p class="hero__description">{{ header.description }}</p>
+            <nuxt-link to="/health-assessment" class="button button--blue m-t-20">{{ header.buttontext }}</nuxt-link>
           </div>
         </div>
       </div>
@@ -17,44 +17,29 @@
     <section class="lifted-section">
       <div class="wrapper">
         <div class="cards--condensed-on-mobile cards--flex-on-desktop">
-          <div class="card card--flex">
-            <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-            <span class="card__divider"></span>
+          <div
+            v-for="(prop, index) in props"
+            :key="index"
+            class="card card--flex"
+          >
+            <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
+            <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
+            <span
+              :class="{
+                'card__divider': true,
+                'bg-darkblue': index % 2 !== 0
+              }"
+            ></span>
             <div class="card__content">
-              <h3 class="card__title">Custom</h3>
-              <p class="card__copy">Custom healing plans for many chronic diseases built by by doctors.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
-            <span class="card__divider bg-darkblue"></span>
-            <div class="card__content">
-              <h3 class="card__title color-darkblue">Diverse</h3>
-              <p class="card__copy">Combining Eastern and Western medicine to focus on prevention.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-            <span class="card__divider"></span>
-            <div class="card__content">
-              <h3 class="card__title">Whole Body</h3>
-              <p class="card__copy">Focus on healing the whole body through research-based health plans.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
-            <span class="card__divider bg-darkblue"></span>
-            <div class="card__content">
-              <h3 class="card__title color-darkblue">Mobile</h3>
-              <p class="card__copy">Digital platform with videos and courses built by medical professionals.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-            <span class="card__divider"></span>
-            <div class="card__content">
-              <h3 class="card__title">Interactive</h3>
-              <p class="card__copy">Coaching from doctors and live chats with medical professionals.</p>
+              <h3
+                :class="{
+                  'card__title': true,
+                  'color-darkblue': index % 2 !== 0
+                }"
+              >
+                {{ prop.title }}
+              </h3>
+              <p class="card__copy">{{ prop.description }}</p>
             </div>
           </div>
         </div>
@@ -65,38 +50,35 @@
       <div class="wrapper">
         <div class="flex-sections">
           <div class="flex-sections__section">
-            <h3>Headline about Nova Remedy goes here</h3>
-            <p>Additional copy about Nova Remedy and why the website was created for people dealing with diseases. Lorest, est peria volorem porisim olorest ruptumquas. Num non ex estionsequam quias ut quis. Louptumquas. Num non ex estionsequam quias ut quis.</p>
-            <nuxt-link to="/about">Learn more about Nova Remedy</nuxt-link>
+            <h3>{{ overview.about.headline }}</h3>
+            <p>{{ overview.about.description }}</p>
+            <nuxt-link :to="`/${overview.about.link.page}`">{{ overview.about.link.text }}</nuxt-link>
           </div>
           <div class="flex-sections__section">
-            <h3 class="color-green">Chronic diseases headline goes here</h3>
+            <h3 class="color-green">{{ overview.diseases.headline }}</h3>
             <ul class="feature-list feature-list--flex">
-              <li class="feature-list__item">Arthritis</li>
-              <li class="feature-list__item">Diabetes</li>
-              <li class="feature-list__item">Endocrine disorder</li>
-              <li class="feature-list__item">Gynecological</li>
-              <li class="feature-list__item">Heart disease</li>
-              <li class="feature-list__item">Hypertension</li>
-              <li class="feature-list__item">Insomnia</li>
-              <li class="feature-list__item">Lung disease</li>
-              <li class="feature-list__item">Osteoporosis</li>
-              <li class="feature-list__item">Stomach disease</li>
+              <li
+                v-for="(disease, index) in overview.diseases.diseases"
+                :key="index"
+                class="feature-list__item"
+              >
+                {{ disease }}
+              </li>
               <li class="feature-list__item">And more</li>
             </ul>
           </div>
           <div class="flex-sections__section">
-            <h3>Trust building headline about doctor here</h3>
-            <p>Lorest, est peria volorem porisim olorest ruptumquas. Num non ex estionsequam. Bea lorem ute is ipsandelest ipsam.</p>
+            <h3>{{ overview.doctor.headline }}</h3>
+            <p>{{ overview.doctor.description }}</p>
             <div class="testimonial">
               <img src="~/assets/images/headshots/generic-doctor.png" alt="" class="testimonial__image">
               <div class="testimonial__content">
-                <p class="testimonial__name">Doctor Name</p>
-                <p class="testimonial__title">Title</p>
-                <p class="testimonial__copy">Education, Credentials</p>
+                <p class="testimonial__name">{{ overview.doctor.information.name }}</p>
+                <p class="testimonial__title">{{ overview.doctor.information.title }}</p>
+                <p class="testimonial__copy">{{ overview.doctor.information.credentials }}</p>
               </div>
             </div>
-            <nuxt-link to="/about">Read more about Nova Remedy's founder</nuxt-link>
+            <nuxt-link :to="`/${overview.doctor.link.page}`">{{ overview.doctor.link.text }}</nuxt-link>
           </div>
         </div>
       </div>
@@ -105,96 +87,43 @@
     <section class="elliptical-section">
       <div class="elliptical-section__background"></div>
       <div class="wrapper">
-        <h2 class="color-darkerblue">Videos Headline</h2>
-        <p class="intro-paragraph m-b-50">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem lorem ipsum dolor sit amet.</p>
-        <div class="video-card">
+        <h2 class="color-darkerblue">{{ videos.headline }}</h2>
+        <p class="intro-paragraph m-b-50">{{ videos.description }}</p>
+        <div
+          v-for="(video, index) in videos.videos"
+          :key="index"
+          class="video-card"
+        >
           <img src="~/assets/images/video-stills/video1.jpg" alt="" class="video-card__image">
           <div class="video-card__content">
-            <h3 class="color-green video-card__title">About video headline</h3>
-            <p class="video-card__copy">Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.</p>
+            <h3 :class="{
+              'video-card__title': true,
+              'color-green': index % 2 === 0,
+            }">
+              {{ video.headline }}
+            </h3>
+            <p class="video-card__copy">{{ video.description }}</p>
             <div class="video-card__overview">
               <ul class="video-card__overview-list">
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-blue">&#9654;</span>
                   <span class="video-card__overview-list-item-title color-blue">Exercise Type:</span>
-                  Upper body
+                  {{ video.type }}
                 </li>
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
                   <span class="video-card__overview-list-item-title color-green">Benefits:</span>
-                  Assists in breathing, posture, endurance
+                  {{ video.benefits }}
                 </li>
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-lightblue">&#9654;</span>
                   <span class="video-card__overview-list-item-title color-lightblue">Uses:</span>
-                  Hypertension, stomach, endocrine disease
+                  {{ video.uses }}
                 </li>
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
                   <span class="video-card__overview-list-item-title color-green">Duration:</span>
-                  10 minutes, 3 times per week
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="video-card">
-          <img src="~/assets/images/video-stills/video2.jpg" alt="" class="video-card__image">
-          <div class="video-card__content">
-            <h3 class="color-blue video-card__title">About video headline</h3>
-            <p class="video-card__copy">Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.</p>
-            <div class="video-card__overview">
-              <ul class="video-card__overview-list">
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-blue">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-blue">Exercise Type:</span>
-                  Arms
-                </li>
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-green">Benefits:</span>
-                  Flexibility, posture
-                </li>
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-lightblue">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-lightblue">Uses:</span>
-                  Hypertension, stomach, heart disease
-                </li>
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-green">Duration:</span>
-                  15 minutes, 4 times per week
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="video-card">
-          <img src="~/assets/images/video-stills/video3.jpg" alt="" class="video-card__image">
-          <div class="video-card__content">
-            <h3 class="color-green video-card__title">About video headline</h3>
-            <p class="video-card__copy">Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.</p>
-            <div class="video-card__overview">
-              <ul class="video-card__overview-list">
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-blue">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-blue">Exercise Type:</span>
-                  Legs
-                </li>
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-green">Benefits:</span>
-                  Flexibility, posture
-                </li>
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-lightblue">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-lightblue">Uses:</span>
-                  Hypertension, stomach, heart disease
-                </li>
-                <li class="video-card__overview-list-item">
-                  <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-green">Duration:</span>
-                  5 minutes, daily
+                  {{ video.duration }}
                 </li>
               </ul>
             </div>
@@ -205,142 +134,28 @@
     <!-- Process -->
     <section class="padded-section">
       <div class="wrapper">
-        <h2>The Process</h2>
-        <p class="intro-paragraph">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.</p>
+        <h2>{{ process.headline }}</h2>
+        <p class="intro-paragraph">{{ process.description }}</p>
         <p class="text-center">
-          <nuxt-link to="/about">Learn more about our process</nuxt-link>
+          <nuxt-link :to="`/${process.link.page}`">{{ process.link.text }}</nuxt-link>
         </p>
         <div class="process-steps">
-          <div class="process-step">
+          <div
+            v-for="(step, index) in process.steps"
+            :key="index"
+            class="process-step"
+          >
             <div class="process-step__image-container">
               <img src="~/assets/images/icons/survey.png" alt="" class="process-step__image">
             </div>
-            <h4 class="process-step__title">1. Take the survey</h4>
-            <p class="text-center is-marginless">Answer questions about your diet, exercise, and chronic diseases.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step__image-container">
-              <img src="~/assets/images/icons/assessment.png" alt="" class="process-step__image">
-            </div>
-            <h4 class="process-step__title color-blue">2. Receive your assessment</h4>
-            <p class="text-center is-marginless">Receive a custom exercise plan based on your results.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step__image-container">
-              <img src="~/assets/images/icons/journey.png" alt="" class="process-step__image">
-            </div>
-            <h4 class="process-step__title">3. Begin your health journey</h4>
-            <p class="text-center is-marginless">Start your recommended exercise and nutrition plan.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Case studies -->
-    <section>
-      <div class="wrapper--wide">
-        <div class="case-study">
-          <div class="case-study__content">
-            <img src="~/assets/images/case-studies/diabetes.jpg" alt="" class="case-study__background">
-            <img src="~/assets/images/icons/heart.png" alt="" class="case-study__icon">
-            <p class="case-study__tag">Case study tag</p>
-            <h3 class="case-study__title">Diabetes Headline</h3>
-            <p class="color-white">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati lorem temporuptat ipsum.</p>
-          </div>
-          <div class="case-study__accordion">
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-          </div>
-        </div>
-        <div class="case-study bg-green-gradient">
-          <div class="case-study__content">
-            <img src="~/assets/images/case-studies/hypertension.jpg" alt="" class="case-study__background">
-            <img src="~/assets/images/icons/heart.png" alt="" class="case-study__icon">
-            <p class="case-study__tag">Case study tag</p>
-            <h3 class="case-study__title">Hypertension Headline</h3>
-            <p class="color-white">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati lorem temporuptat ipsum.</p>
-          </div>
-          <div class="case-study__accordion">
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-          </div>
-        </div>
-        <div class="case-study">
-          <div class="case-study__content">
-            <img src="~/assets/images/case-studies/ptsd.jpg" alt="" class="case-study__background">
-            <img src="~/assets/images/icons/heart.png" alt="" class="case-study__icon">
-            <p class="case-study__tag">Case study tag</p>
-            <h3 class="case-study__title">PTSD Headline</h3>
-            <p class="color-white">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati lorem temporuptat ipsum.</p>
-          </div>
-          <div class="case-study__accordion">
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-            <accordion-section :is-card="true">
-              <template slot="accordion-header">
-                <h4 class="card__title">Benefit title goes here</h4>
-              </template>
-              <template slot="accordion-content">
-                <p class="m-t-5 m-b-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
+            <h4
+              :class="{
+                'process-step__title': true,
+                'color-blue': index % 2 !== 0,
+              }">
+                {{ index + 1 }}. {{ step.title }}
+              </h4>
+            <p class="text-center is-marginless">{{ step.description }}</p>
           </div>
         </div>
       </div>
@@ -348,7 +163,7 @@
     <!-- CTA -->
     <section class="bg-green-gradient-radial p-t-100 p-b-100">
       <div class="wrapper flex-container flex-center">
-        <nuxt-link to="/health-assessment" class="button button--white">Start your health journey today</nuxt-link>
+        <nuxt-link :to="`/${cta.page}`" class="button button--white">{{ cta.text }}</nuxt-link>
       </div>
     </section>
   </div>

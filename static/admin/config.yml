@@ -12,4 +12,125 @@ collections:
         name: "home"
         file: "content/_index.json"
         fields:
-          - {label: Headline, name: headline, widget: string}
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Button Text", name: "buttontext", widget: "string"}
+          - label: "Value Props"
+            name: "props"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+          - label: "Content Overview"
+            name: "overview"
+            widget: "object"
+            fields:
+              - label: "About Nova Remedy"
+                name: "about"
+                widget: "object"
+                - fields:
+                  - {label: "Headline", name: "headline", widget: "string"}
+                  - {label: "Description", name: "description", widget: "markdown"}
+                  - label: "Link"
+                    name: "link"
+                    fields:
+                      - {label: "Link text", name: "text", widget: "string"}
+                      - label: "Link to page"
+                        name: "page"
+                        widget: "select"
+                        options:
+                          - {label: "About", value: "about"}
+                          - {label: "Contact", value: "contact"}
+                          - {label: "Health Assessment", value: "health-assessment"}
+                          - {label: "Pricing", value: "pricing"}
+              - label: "Chronic Disease List"
+                name: "diseases"
+                widget: "object"
+                fields:
+                  - {label: "Headline", name: "headline", widget: "string"}
+                  - label: "Diseases"
+                    name: "diseases"
+                    widget: "list"
+                    fields:
+                      - {label: "Disease", name: "disease", widget: "string"}
+              - label: "Doctor Overview"
+                name: "doctor"
+                widget: "object"
+                fields:
+                  - {label: "Headline", name: "headline", widget: "string"}
+                  - {label: "Description", name: "description", widget: "markdown"}
+                  - label: "Doctor Information"
+                    name: "information"
+                    widget: "object"
+                    fields:
+                      - {label: "Name", name: "name", widget: "string"}
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Credentials", name: "credentials", widget: "string"}
+                  - label: "Link"
+                    name: "link"
+                    fields:
+                      - {label: "Link text", name: "text", widget: "string"}
+                      - label: "Link to page"
+                        name: "page"
+                        widget: "select"
+                        options:
+                          - {label: "About", value: "about"}
+                          - {label: "Contact", value: "contact"}
+                          - {label: "Health Assessment", value: "health-assessment"}
+                          - {label: "Pricing", value: "pricing"}
+          - label: "Videos"
+            name: "videos"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                fields:
+                  - {label: "Headline", name: "headline", widget: "string"}
+                  - {label: "Description", name: "description", widget: "markdown"}
+                  - {label: "Exercise Type", name: "type", widget: "string"}
+                  - {label: "Benefits", name: "benefits", widget: "string"}
+                  - {label: "Uses", name: "uses", widget: "string"}
+                  - {label: "Duration", name: "duration", widget: "string"}
+          - label: "Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - label: "Link"
+                name: "link"
+                fields:
+                  - {label: "Link text", name: "text", widget: "string"}
+                  - label: "Link to page"
+                    name: "page"
+                    widget: "select"
+                    options:
+                      - {label: "About", value: "about"}
+                      - {label: "Contact", value: "contact"}
+                      - {label: "Health Assessment", value: "health-assessment"}
+                      - {label: "Pricing", value: "pricing"}
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Call to Action"
+            name: "cta"
+            fields:
+              - {label: "Link text", name: "text", widget: "string"}
+              - label: "Link to page"
+                name: "page"
+                widget: "select"
+                options:
+                  - {label: "About", value: "about"}
+                  - {label: "Contact", value: "contact"}
+                  - {label: "Health Assessment", value: "health-assessment"}
+                  - {label: "Pricing", value: "pricing"}

@@ -1,3 +1,123 @@
 {
-  "headline": "Headline created with CMS"
+  "header": {
+    "headline": "Headline here",
+    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.",
+    "buttontext": "Start your health journey today"
+  },
+  "props": [
+    {
+      "title": "Custom",
+      "description": "Custom healing plans for many chronic diseases built by doctors"
+    },
+    {
+      "title": "Diverse",
+      "description": "Combining Eastern and Western medicine to focus on prevention"
+    },
+    {
+      "title": "Whole Body",
+      "description": "Focus on healing the whole body through research-based health plans"
+    },
+    {
+      "title": "Mobile",
+      "description": "Digital platform with videos and courses built by medical professionals"
+    },
+    {
+      "title": "Interactive",
+      "description": "Coaching from doctors and live chats with medical professionals"
+    }
+  ],
+  "overview": {
+    "about": {
+      "headline": "Headline about Nova Remedy goes here",
+      "description": "Additional copy about Nova Remedy and why the website was created for people dealing with diseases. Lorest, est peria volorem porisim olorest ruptumquas. Num non ex estionsequam quias ut quis. Louptumquas. Num non ex estionsequam quias ut quis.",
+      "link": {
+        "text": "Learn more about Nova Remedy",
+        "page": "about"
+      }
+    },
+    "diseases": {
+      "headline": "Chronic diseases headline goes here",
+      "diseases": [
+        "Arthritis",
+        "Diabetes",
+        "Endocrine disorder",
+        "Gynecological",
+        "Heart disease",
+        "Hypertension",
+        "Insomnia",
+        "Lung disease",
+        "Osteoporosis",
+        "Stomach disease"
+      ]
+    },
+    "doctor": {
+      "headline": "Trust building headline about doctor here",
+      "description": "Lorest, est peria volorem porisim olorest ruptumquas. Num non ex estionsequam. Bea lorem ute is ipsandelest ipsam.",
+      "information": {
+        "name": "Doctor Name",
+        "title": "Title",
+        "credentials": "Education, Credentials"
+      },
+      "link": {
+        "text": "Read more about Nova Remedy's founder",
+        "page": "about"
+      }
+    }
+  },
+  "videos": {
+    "headline": "Videos Headline",
+    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem lorem ipsum dolor sit amet.",
+    "videos": [
+      {
+        "headline": "About video headline",
+        "description": "Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.",
+        "type": "Upper body",
+        "benefits": "Assists in breathing, posture, endurance",
+        "uses": "Hypertension, stomach, endocrine disease",
+        "duration": "10 minutes, 3 times per week"
+      },
+      {
+        "headline": "About video headline",
+        "description": "Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.",
+        "type": "Arms",
+        "benefits": "Flexibility, posture",
+        "uses": "Hypertension, stomach, heart disease",
+        "duration": "15 minutes, 4 times per week"
+      },
+      {
+        "headline": "About video headline",
+        "description": "Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.",
+        "type": "Legs",
+        "benefits": "Flexibility, posture",
+        "uses": "Hypertension, stomach, heart disease",
+        "duration": "5 minutes, daily"
+      }
+    ]
+  },
+  "process": {
+    "headline": "The Process",
+    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.",
+    "link": {
+      "text": "Learn more about our process",
+      "page": "about"
+    },
+    "steps": [
+      {
+        "title": "Take the survey",
+        "description": "Answer questions about your diet, exercise, and chronic diseases."
+      },
+      {
+        "title": "Receive your assessment",
+        "description": "Receive a custom exercise plan based on your results."
+      },
+      {
+        "title": "Begin your health journey",
+        "description": "Start your recommended exercise and nutrition plan."
+      }
+    ]
+  },
+  "cta": {
+    "text": "Start your health journey today",
+    "page": "health-assessment"
+  }
 }
