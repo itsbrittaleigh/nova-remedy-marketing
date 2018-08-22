@@ -1,0 +1,38 @@
+{
+  "header": {
+    "headline": "Contact",
+    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet."
+  },
+  "methods": {
+    "phones": [
+      {
+        "title": "Customer Service",
+        "number": "800-123-4567"
+      },
+      {
+        "title": "Business",
+        "number": "800-123-4567"
+      }
+    ],
+    "emails": [
+      {
+        "title": "Category",
+        "email": "email@novaremedy.com"
+      },
+      {
+        "title": "Category",
+        "email": "email@novaremedy.com"
+      }
+    ],
+    "address": {
+      "title": "Mailing",
+      "street": "12345 Main Street",
+      "city": "Ann Arbor",
+      "state": "MI",
+      "zip": "40234"
+    }
+  },
+  "form": {
+    "headline": "Get in Touch"
+  }
+}

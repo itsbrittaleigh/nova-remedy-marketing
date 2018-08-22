@@ -232,3 +232,42 @@ collections:
                 name: "features"
                 widget: "list"
                 field: {label: "Feature", name: "feature", widget: "string"}
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/_contact.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+          - label: "Contact Methods"
+            name: "methods"
+            widget: "object"
+            fields:
+              - label: "Phone Numbers"
+                name: "phones"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Phone Number", name: "number", widget: "string"}
+              - label: "Email Addresses"
+                name: "emails"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Email Address", name: "email", widget: "string"}
+              - label: "Address"  
+                name: "address"
+                widget: "object"
+                fields:
+                  - {label: "Street Address", name: "street", widget: "string"}
+                  - {label: "City", name: "city", widget: "string"}
+                  - {label: "State", name: "state", widget: "string"}
+                  - {label: "Zip Code", name: "zip", widget: "string"}
+          - label: "Form"
+            name: "form"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
