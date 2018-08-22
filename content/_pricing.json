@@ -1,7 +1,8 @@
 {
   "header": {
     "headline": "Pricing",
-    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet."
+    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.",
+    "image": "/images/uploads/pricing.jpg"
   },
   "packages": [
     {
@@ -9,6 +10,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
       "month": "$29",
       "year": "$250",
+      "image": "/images/uploads/lotus-icon-green.png",
       "features": [
         "Lorem ipsum dolor",
         "sit amet consectetur",
@@ -25,6 +27,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
       "month": "$39",
       "year": "$350",
+      "image": "/images/uploads/lotus-icon-blue.png",
       "features": [
         "Lorem ipsum dolor",
         "sit amet consectetur",
@@ -41,6 +44,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
       "month": "$49",
       "year": "$450",
+      "image": "/images/uploads/lotus-icon-green.png",
       "features": [
         "Lorem ipsum dolor",
         "sit amet consectetur",
