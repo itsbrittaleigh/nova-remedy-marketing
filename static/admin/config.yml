@@ -1,12 +1,13 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+  branch: master
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 collections:
   - name: "pages"
     label: "Pages"
     create: false
+    editor: false
     files:
       - label: "Home Page"
         name: "home"
@@ -37,6 +38,7 @@ collections:
                   - {label: "Description", name: "description", widget: "markdown"}
                   - label: "Link"
                     name: "link"
+                    widget: "object"
                     fields:
                       - {label: "Link text", name: "text", widget: "string"}
                       - label: "Link to page"
@@ -55,8 +57,7 @@ collections:
                   - label: "Diseases"
                     name: "diseases"
                     widget: "list"
-                    fields:
-                      - {label: "Disease", name: "disease", widget: "string"}
+                    field: {label: "Disease", name: "disease", widget: "string"}
               - label: "Doctor Overview"
                 name: "doctor"
                 widget: "object"
@@ -72,6 +73,7 @@ collections:
                       - {label: "Credentials", name: "credentials", widget: "string"}
                   - label: "Link"
                     name: "link"
+                    widget: "object"
                     fields:
                       - {label: "Link text", name: "text", widget: "string"}
                       - label: "Link to page"
@@ -106,6 +108,7 @@ collections:
               - {label: "Description", name: "description", widget: "markdown"}
               - label: "Link"
                 name: "link"
+                widget: "object"
                 fields:
                   - {label: "Link text", name: "text", widget: "string"}
                   - label: "Link to page"
@@ -124,6 +127,7 @@ collections:
                   - {label: "Description", name: "description", widget: "markdown"}
           - label: "Call to Action"
             name: "cta"
+            widget: "object"
             fields:
               - {label: "Link text", name: "text", widget: "string"}
               - label: "Link to page"
