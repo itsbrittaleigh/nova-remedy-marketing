@@ -2,28 +2,34 @@
   "header": {
     "headline": "Headline here",
     "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.",
-    "buttontext": "Start your health journey today"
+    "buttontext": "Start your health journey today",
+    "image": "/images/uploads/home.jpg"
   },
   "props": [
     {
       "title": "Custom",
-      "description": "Custom healing plans for many chronic diseases built by doctors"
+      "description": "Custom healing plans for many chronic diseases built by doctors",
+      "image": "/images/uploads/lotus-icon-green.png"
     },
     {
       "title": "Diverse",
-      "description": "Combining Eastern and Western medicine to focus on prevention"
+      "description": "Combining Eastern and Western medicine to focus on prevention",
+      "image": "/images/uploads/lotus-icon-blue.png"
     },
     {
       "title": "Whole Body",
-      "description": "Focus on healing the whole body through research-based health plans"
+      "description": "Focus on healing the whole body through research-based health plans",
+      "image": "/images/uploads/lotus-icon-green.png"
     },
     {
       "title": "Mobile",
-      "description": "Digital platform with videos and courses built by medical professionals"
+      "description": "Digital platform with videos and courses built by medical professionals",
+      "image": "/images/uploads/lotus-icon-blue.png"
     },
     {
       "title": "Interactive",
-      "description": "Coaching from doctors and live chats with medical professionals"
+      "description": "Coaching from doctors and live chats with medical professionals",
+      "image": "/images/uploads/lotus-icon-green.png"
     }
   ],
   "overview": {
@@ -56,7 +62,8 @@
       "information": {
         "name": "Doctor Name",
         "title": "Title",
-        "credentials": "Education, Credentials"
+        "credentials": "Education, Credentials",
+        "image": "/images/uploads/generic-doctor.png"
       },
       "link": {
         "text": "Read more about Nova Remedy's founder",
@@ -74,7 +81,8 @@
         "type": "Upper body",
         "benefits": "Assists in breathing, posture, endurance",
         "uses": "Hypertension, stomach, endocrine disease",
-        "duration": "10 minutes, 3 times per week"
+        "duration": "10 minutes, 3 times per week",
+        "image": "/images/uploads/video1.jpg"
       },
       {
         "headline": "About video headline",
@@ -82,7 +90,8 @@
         "type": "Arms",
         "benefits": "Flexibility, posture",
         "uses": "Hypertension, stomach, heart disease",
-        "duration": "15 minutes, 4 times per week"
+        "duration": "15 minutes, 4 times per week",
+        "image": "/images/uploads/pricing.jpg"
       },
       {
         "headline": "About video headline",
@@ -90,7 +99,8 @@
         "type": "Legs",
         "benefits": "Flexibility, posture",
         "uses": "Hypertension, stomach, heart disease",
-        "duration": "5 minutes, daily"
+        "duration": "5 minutes, daily",
+        "image": "/images/uploads/health-assessment.jpg"
       }
     ]
   },
@@ -104,15 +114,18 @@
     "steps": [
       {
         "title": "Take the survey",
-        "description": "Answer questions about your diet, exercise, and chronic diseases."
+        "description": "Answer questions about your diet, exercise, and chronic diseases.",
+        "image": "/images/uploads/survey.png"
       },
       {
         "title": "Receive your assessment",
-        "description": "Receive a custom exercise plan based on your results."
+        "description": "Receive a custom exercise plan based on your results.",
+        "image": "/images/uploads/assessment.png"
       },
       {
         "title": "Begin your health journey",
-        "description": "Start your recommended exercise and nutrition plan."
+        "description": "Start your recommended exercise and nutrition plan.",
+        "image": "/images/uploads/journey.png"
       }
     ]
   },
