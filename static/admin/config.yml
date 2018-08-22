@@ -138,3 +138,75 @@ collections:
                   - {label: "Contact", value: "contact"}
                   - {label: "Health Assessment", value: "health-assessment"}
                   - {label: "Pricing", value: "pricing"}
+      - label: "About Page"
+        name: "about"
+        file: "content/_about.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+          - label: "Value Props"
+            name: "props"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+          - label: "Overview"
+            name: "overview"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Snippet", name: "snippet", widget: "string"}
+                  - {label: "Full description", name: "description", widget: "string"}
+                  - label: "Statistic"
+                    name: "statistic"
+                    widget: "object"
+                    fields:
+                      - {label: "Number", name: "number", widget: "string"}
+                      - {label: "Description", name: "description", widget: "string"}
+          - label: "Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - label: "Team Members"
+                name: "members"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "description"}
+          - label: "Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Link text", name: "text", widget: "string"}
+              - label: "Link to page"
+                name: "page"
+                widget: "select"
+                options:
+                  - {label: "Contact", value: "contact"}
+                  - {label: "Health Assessment", value: "health-assessment"}
+                  - {label: "Pricing", value: "pricing"}

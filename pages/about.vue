@@ -6,8 +6,8 @@
         <img src="~/assets/images/covers/about.jpg" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
-            <h1>About</h1>
-            <p class="hero__description">Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.</p>
+            <h1>{{ header.headline }}</h1>
+            <p class="hero__description">{{ header.description }}</p>
           </div>
         </div>
       </div>
@@ -16,49 +16,25 @@
     <section class="lifted-section">
       <div class="wrapper">
         <div class="cards--condensed-on-mobile cards--flex-on-desktop cards--profile-on-desktop">
-          <div class="card card--flex">
+          <div
+            v-for="(prop, index) in props"
+            :key="index"
+            class="card card--flex"
+          >
             <img src="~/assets/images/value-props/prop1.png" alt="" class="card__profile-image hidden-on-mobile m-b-20">
-            <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
+            <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
+            <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon hidden-on-desktop">
             <span class="card__divider"></span>
             <div class="card__content">
-              <h3 class="card__title">Increase your energy levels</h3>
-              <p class="card__copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/value-props/prop2.png" alt="" class="card__profile-image hidden-on-mobile m-b-20">
-            <img src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon hidden-on-desktop">
-            <span class="card__divider bg-darkblue"></span>
-            <div class="card__content">
-              <h3 class="card__title color-darkblue">Decrease your blood pressure</h3>
-              <p class="card__copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/value-props/prop3.png" alt="" class="card__profile-image hidden-on-mobile m-b-20">
-            <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
-            <span class="card__divider"></span>
-            <div class="card__content">
-              <h3 class="card__title">Build a custom nutrition plan</h3>
-              <p class="card__copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/value-props/prop4.png" alt="" class="card__profile-image hidden-on-mobile m-b-20">
-            <img src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon hidden-on-desktop">
-            <span class="card__divider bg-darkblue"></span>
-            <div class="card__content">
-              <h3 class="card__title color-darkblue">Save money on medications</h3>
-              <p class="card__copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
-            </div>
-          </div>
-          <div class="card card--flex">
-            <img src="~/assets/images/value-props/prop5.png" alt="" class="card__profile-image hidden-on-mobile m-b-20">
-            <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
-            <span class="card__divider"></span>
-            <div class="card__content">
-              <h3 class="card__title">Interactive</h3>
-              <p class="card__copy">Coaching from doctors and live chats with medical professionals.</p>
+              <h3
+                :class="{
+                  'card__title': true,
+                  'color-darkblue': index % 2 !== 0,
+                }"
+              >
+                {{ prop.title }}
+              </h3>
+              <p class="card__copy">{{ prop.description }}</p>
             </div>
           </div>
         </div>
@@ -73,66 +49,40 @@
     <!-- Accordion cards -->
     <section class="padded-section p-t-0">
       <div class="wrapper">
-        <h2 class="is-marginless">Headline Here</h2>
-        <p class="text-center intro-paragraph m-b-50">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.</p>
-        <div class="card card--flex card--flex-on-desktop m-b-20">
-          <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-          <span class="card__divider"></span>
+        <h2 class="is-marginless">{{ overview.headline }}</h2>
+        <p class="text-center intro-paragraph m-b-50">{{ overview.description }}</p>
+        <div
+          v-for="(card, index) in overview.cards"
+          :key="index"
+          class="card card--flex card--flex-on-desktop m-b-20"
+        >
+          <img v-if="index % 2 === 0" src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
+          <img v-else src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
+          <span :class="{ 
+            'card__divider': true,
+            'bg-darkblue': index % 2 !== 0,
+          }"></span>
           <div class="card__content">
-            <h3 class="card__title">Nova Remedy's Story</h3>
-            <p class="card__copy m-b-10">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
+            <h3
+              :class="{
+                'card__title': true,
+                'color-darkblue': index % 2 !== 0,
+              }">
+                {{ card.title }}
+              </h3>
+            <p class="card__copy m-b-10">{{ card.snippet }}</p>
             <accordion-section>
               <template slot="accordion-header">
                 <a href="#" class="color-green">Read more</a>
               </template>
               <template slot="accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
+                <p>{{ card.description }}</p>
               </template>
             </accordion-section>
           </div>
           <div class="card__statistic hidden-on-mobile visible-on-tablet">
-            <p class="statistic__number">95%</p>
-            <p class="statistic__label">Text description about number</p>
-          </div>
-        </div>
-        <div class="card card--flex card--flex-on-desktop m-b-20">
-          <img src="~/assets/images/icons/lotus-icon-blue.png" alt="Lotus icon with blue gradient" class="card__icon">
-          <span class="card__divider bg-darkblue"></span>
-          <div class="card__content">
-            <h3 class="card__title color-darkblue">About headline</h3>
-            <p class="card__copy m-b-10">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
-            <accordion-section>
-              <template slot="accordion-header">
-                <a href="#">Read more</a>
-              </template>
-              <template slot="accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-          </div>
-          <div class="card__statistic hidden-on-mobile visible-on-tablet">
-            <p class="statistic__number color-darkblue">14</p>
-            <p class="statistic__label">Text description about number</p>
-          </div>
-        </div>
-        <div class="card card--flex card--flex-on-desktop m-b-20">
-          <img src="~/assets/images/icons/lotus-icon-green.png" alt="Lotus icon with green gradient" class="card__icon">
-          <span class="card__divider"></span>
-          <div class="card__content">
-            <h3 class="card__title">Headline about the video process</h3>
-            <p class="card__copy m-b-10">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.</p>
-            <accordion-section>
-              <template slot="accordion-header">
-                <a href="#" class="color-green">Read more</a>
-              </template>
-              <template slot="accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!</p>
-              </template>
-            </accordion-section>
-          </div>
-          <div class="card__statistic hidden-on-mobile visible-on-tablet">
-            <p class="statistic__number">1200+</p>
-            <p class="statistic__label">Text description about number</p>
+            <p class="statistic__number">{{ card.statistic.number }}</p>
+            <p class="statistic__label">{{ card.statistic.description }}</p>
           </div>
         </div>
       </div>
@@ -140,52 +90,37 @@
     <!-- Process -->
     <section class="padded-section">
       <div class="wrapper">
-        <h2 class="is-marginless">How Nova Works</h2>
-        <p class="text-center intro-paragraph m-b-50">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.</p>
-        <div class="step">
-          <p class="step__number color-darkblue">1</p>
-          <div class="step__image-container">
-            <img src="~/assets/images/process/assessment.png" alt="" class="step__image">
+        <h2 class="is-marginless">{{ process.headline }}</h2>
+        <p class="text-center intro-paragraph m-b-50">{{ process.description }}</p>
+        <div
+          v-for="(step, index) in process.steps"
+          :key="index"
+        >
+          <div class="step">
+            <p :class="{
+              'step__number': true,
+              'color-darkblue': index % 2 === 0,
+              'color-green': index % 2 !== 0,
+            }">
+              {{ index + 1 }}
+            </p>
+            <div class="step__image-container">
+              <img src="~/assets/images/process/assessment.png" alt="" class="step__image">
+            </div>
+            <div class="step__content">
+              <h3
+                :class="{
+                  'is-marginless': true,
+                  'color-darkblue': index % 2 === 0,
+                  'color-green': index % 2 !== 0,
+                }">
+                  {{ step.title }}
+                </h3>
+              <p>{{ step.description }}</p>
+            </div>
           </div>
-          <div class="step__content">
-            <h3 class="is-marginless color-darkblue">Take the health assessment</h3>
-            <p class="m-t-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <h4 class="is-marginless color-darkblue">The Science</h4>
-            <p class="m-t-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident.</p>
-            <h4 class="is-marginless color-darkblue">The Physicians</h4>
-            <p class="m-t-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident.</p>
-          </div>
-        </div>
-        <div class="padded-section">
-          <div class="divider"></div>
-        </div>
-        <div class="step">
-          <p class="step__number color-green">2</p>
-          <div class="step__image-container">
-          <img src="~/assets/images/icons/assessment.png" alt="" class="step__image">
-          </div>
-          <div class="step__content">
-            <h3 class="is-marginless color-green">Receive your personalized plan</h3>
-            <p class="m-t-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <h4 class="is-marginless">The criteria</h4>
-            <p class="m-t-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident.</p>
-          </div>
-        </div>
-        <div class="padded-section">
-          <div class="divider"></div>
-        </div>
-        <div class="step">
-          <p class="step__number color-blue">3</p>
-          <div class="step__image-container">
-            <img src="~/assets/images/process/journey.png" alt="" class="step__image">
-          </div>
-          <div class="step__content">
-            <h3 class="is-marginless color-blue">Begin your new health journey</h3>
-            <p class="m-t-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <h4 class="is-marginless color-blue">Exercise and fitness</h4>
-            <p class="m-t-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident.</p>
-            <h4 class="is-marginless color-blue">Diet and nutrition</h4>
-            <p class="m-t-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Excepteur sint occaecat cupidatat non proident.</p>
+          <div v-if="index !== process.steps.length - 1" class="padded-section">
+            <div class="divider"></div>
           </div>
         </div>
       </div>
@@ -193,64 +128,28 @@
     <!-- Team -->
     <section class="padded-section">
       <div class="wrapper">
-        <h2 class="is-marginless">The Nova Remedy Team</h2>
-        <p class="text-center intro-paragraph m-b-50">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.</p>
+        <h2 class="is-marginless">{{ team.headline }}</h2>
+        <p class="text-center intro-paragraph m-b-50">{{ team.description }}</p>
         <div class="team-members">
-          <div class="team-members__member-container">
+          <div
+            v-for="(member, index) in team.members"
+            :key="index"
+            class="team-members__member-container"
+          >
             <img src="~/assets/images/team-members/member1.png" alt="" class="team-members__profile-image">
             <div class="team-members__member-content">
-              <h3 class="team-members__member-name is-marginless">Team Member</h3>
-              <p class="team-members__member-title is-marginless">Title</p>
-              <p class="team-members__member-copy is-marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="team-members__member-container">
-            <img src="~/assets/images/team-members/member3.png" alt="" class="team-members__profile-image">
-            <div class="team-members__member-content">
-              <h3 class="team-members__member-name is-marginless">Team Member</h3>
-              <p class="team-members__member-title is-marginless">Title</p>
-              <p class="team-members__member-copy is-marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="team-members__member-container">
-            <img src="~/assets/images/team-members/member2.png" alt="" class="team-members__profile-image">
-            <div class="team-members__member-content">
-              <h3 class="team-members__member-name is-marginless">Team Member</h3>
-              <p class="team-members__member-title is-marginless">Title</p>
-              <p class="team-members__member-copy is-marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="team-members__member-container">
-            <img src="~/assets/images/team-members/member4.png" alt="" class="team-members__profile-image">
-            <div class="team-members__member-content">
-              <h3 class="team-members__member-name is-marginless">Team Member</h3>
-              <p class="team-members__member-title is-marginless">Title</p>
-              <p class="team-members__member-copy is-marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="team-members__member-container">
-            <img src="~/assets/images/team-members/member5.png" alt="" class="team-members__profile-image">
-            <div class="team-members__member-content">
-              <h3 class="team-members__member-name is-marginless">Team Member</h3>
-              <p class="team-members__member-title is-marginless">Title</p>
-              <p class="team-members__member-copy is-marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="team-members__member-container">
-            <img src="~/assets/images/team-members/member6.png" alt="" class="team-members__profile-image">
-            <div class="team-members__member-content">
-              <h3 class="team-members__member-name is-marginless">Team Member</h3>
-              <p class="team-members__member-title is-marginless">Title</p>
-              <p class="team-members__member-copy is-marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <h3 class="team-members__member-name is-marginless">{{ member.name }}</h3>
+              <p class="team-members__member-title is-marginless">{{ member.title }}</p>
+              <p class="team-members__member-copy is-marginless">{{ member.description }}</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- CTA -->
-    <section class="bg-green-gradient p-t-100 p-b-100">
+    <section class="bg-green-gradient-radial p-t-100 p-b-100">
       <div class="wrapper flex-container flex-center">
-        <nuxt-link to="/health-assessment" class="button button--white">Start your health journey today</nuxt-link>
+        <nuxt-link :to="`/${cta.page}`" class="button button--white">{{ cta.text }}</nuxt-link>
       </div>
     </section>
   </div>
@@ -260,6 +159,10 @@
 import AccordionSection from '~/components/AccordionSection.vue';
 
 export default {
+  async asyncData({ params }) {
+    const pageData = await import('~/content/_about.json');
+    return pageData;
+  },
   data() {
     return {};
   },
