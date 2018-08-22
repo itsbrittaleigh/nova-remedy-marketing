@@ -20,12 +20,14 @@ collections:
               - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Button Text", name: "buttontext", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
           - label: "Value Props"
             name: "props"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+              - {label: "Icon", name: "image", widget: "image"}
           - label: "Content Overview"
             name: "overview"
             widget: "object"
@@ -71,6 +73,7 @@ collections:
                       - {label: "Name", name: "name", widget: "string"}
                       - {label: "Title", name: "title", widget: "string"}
                       - {label: "Credentials", name: "credentials", widget: "string"}
+                      - {label: "Headshot", name: "image", widget: "image"}
                   - label: "Link"
                     name: "link"
                     widget: "object"
@@ -100,6 +103,8 @@ collections:
                   - {label: "Benefits", name: "benefits", widget: "string"}
                   - {label: "Uses", name: "uses", widget: "string"}
                   - {label: "Duration", name: "duration", widget: "string"}
+                  - {label: "Image Still", name: "image", widget: "image"}
+                  - {label: "Video", name: "video", widget: "file"}
           - label: "Process"
             name: "process"
             widget: "object"
@@ -125,6 +130,7 @@ collections:
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Description", name: "description", widget: "string"}
+                  - {label: "Image", name: "image", widget: "image"}
           - label: "Call to Action"
             name: "cta"
             widget: "object"
@@ -148,12 +154,15 @@ collections:
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
           - label: "Value Props"
             name: "props"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+              - {label: "Icon (Mobile)", name: "icon", widget: "image"}
+              - {label: "Image (Desktop)", name: "image", widget: "image"}
           - label: "Overview"
             name: "overview"
             widget: "object"
@@ -167,6 +176,7 @@ collections:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Snippet", name: "snippet", widget: "string"}
                   - {label: "Full description", name: "description", widget: "string"}
+                  - {label: "Icon", name: "image", widget: "image"}
                   - label: "Statistic"
                     name: "statistic"
                     widget: "object"
@@ -185,6 +195,7 @@ collections:
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Description", name: "description", widget: "string"}
+                  - {label: "Image", name: "image", widget: "image"}
           - label: "Team"
             name: "team"
             widget: "object"
@@ -198,6 +209,7 @@ collections:
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Description", name: "description", widget: "string"}
+                  - {label: "Headshot", name: "image", widget: "image"}
           - label: "Call to Action"
             name: "cta"
             widget: "object"
@@ -220,6 +232,7 @@ collections:
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
           - label: "Packages"
             name: "packages"
             widget: "list"
@@ -228,6 +241,7 @@ collections:
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Cost per month", name: "month", widget: "string"}
               - {label: "Cost per year", name: "year", widget: "string"}
+              - {label: "Icon", name: "image", widget: "image"}
               - label: "Features"
                 name: "features"
                 widget: "list"
@@ -242,6 +256,7 @@ collections:
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
           - label: "Contact Methods"
             name: "methods"
             widget: "object"
