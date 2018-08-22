@@ -35,7 +35,7 @@ collections:
                 widget: "object"
                 fields:
                   - {label: "Headline", name: "headline", widget: "string"}
-                  - {label: "Description", name: "description", widget: "markdown"}
+                  - {label: "Description", name: "description", widget: "string"}
                   - label: "Link"
                     name: "link"
                     widget: "object"
@@ -63,7 +63,7 @@ collections:
                 widget: "object"
                 fields:
                   - {label: "Headline", name: "headline", widget: "string"}
-                  - {label: "Description", name: "description", widget: "markdown"}
+                  - {label: "Description", name: "description", widget: "string"}
                   - label: "Doctor Information"
                     name: "information"
                     widget: "object"
@@ -89,13 +89,13 @@ collections:
             widget: "object"
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Description", name: "description", widget: "string"}
               - label: "Videos"
                 name: "videos"
                 widget: "list"
                 fields:
                   - {label: "Headline", name: "headline", widget: "string"}
-                  - {label: "Description", name: "description", widget: "markdown"}
+                  - {label: "Description", name: "description", widget: "string"}
                   - {label: "Exercise Type", name: "type", widget: "string"}
                   - {label: "Benefits", name: "benefits", widget: "string"}
                   - {label: "Uses", name: "uses", widget: "string"}
@@ -105,7 +105,7 @@ collections:
             widget: "object"
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Description", name: "description", widget: "string"}
               - label: "Link"
                 name: "link"
                 widget: "object"
@@ -124,7 +124,7 @@ collections:
                 widget: "list"
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
-                  - {label: "Description", name: "description", widget: "markdown"}
+                  - {label: "Description", name: "description", widget: "string"}
           - label: "Call to Action"
             name: "cta"
             widget: "object"
@@ -184,7 +184,7 @@ collections:
                 widget: "list"
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
-                  - {label: "Description", name: "description", widget: "markdown"}
+                  - {label: "Description", name: "description", widget: "string"}
           - label: "Team"
             name: "team"
             widget: "object"
@@ -197,7 +197,7 @@ collections:
                 fields:
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "Title", name: "title", widget: "string"}
-                  - {label: "Description", name: "description", widget: "description"}
+                  - {label: "Description", name: "description", widget: "string"}
           - label: "Call to Action"
             name: "cta"
             widget: "object"
@@ -240,7 +240,7 @@ collections:
             name: "header"
             widget: "object"
             fields:
-              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
           - label: "Contact Methods"
             name: "methods"
