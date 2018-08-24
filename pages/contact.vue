@@ -84,9 +84,9 @@ export default {
   },
   head() {
     return {
-      title: 'Contact | Nova Remedy',
+      title: this.meta.title,
       meta: [
-        { hid: 'description', name: 'description', content: '' },
+        { hid: 'description', name: 'description', content: this.meta.description },
       ],
     };
   },

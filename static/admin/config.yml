@@ -13,6 +13,12 @@ collections:
         name: "home"
         file: "content/_index.json"
         fields:
+          - label: "Meta Information"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Meta Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "description", widget: "string"}
           - label: "Header"
             name: "header"
             widget: "object"
@@ -148,6 +154,12 @@ collections:
         name: "about"
         file: "content/_about.json"
         fields:
+          - label: "Meta Information"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Meta Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "description", widget: "string"}
           - label: "Header"
             name: "header"
             widget: "object"
@@ -226,6 +238,12 @@ collections:
         name: "pricing"
         file: "content/_pricing.json"
         fields:
+          - label: "Meta Information"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Meta Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "description", widget: "string"}
           - label: "Header"
             name: "header"
             widget: "object"
@@ -250,6 +268,12 @@ collections:
         name: "contact"
         file: "content/_contact.json"
         fields:
+          - label: "Meta Information"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Meta Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "description", widget: "string"}
           - label: "Header"
             name: "header"
             widget: "object"
@@ -290,6 +314,12 @@ collections:
         name: "results"
         file: "content/_results.json"
         fields:
+          - label: "Meta Information"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Meta Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "description", widget: "string"}
           - label: "Header"
             name: "header"
             widget: "object"
@@ -317,5 +347,15 @@ collections:
         name: "assessment"
         file: "content/_assessment.json"
         fields:
-          - {label: "Background Image", name: "image", widget: "image"}
+          - label: "Meta Information"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Meta Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "description", widget: "string"}
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: "Background Image", name: "image", widget: "image"}
 

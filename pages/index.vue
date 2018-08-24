@@ -191,5 +191,13 @@ export default {
   components: {
     'accordion-section': AccordionSection,
   },
+  head() {
+    return {
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+      ],
+    };
+  },
 };
 </script>
