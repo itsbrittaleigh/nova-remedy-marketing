@@ -286,3 +286,36 @@ collections:
             widget: "object"
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
+      - label: "Health Assessment Results Page"
+        name: "results"
+        file: "content/_results.json"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+            - {label: "Headline", name: "headline", widget: "string"}
+            - {label: "Subtitle", name: "subtitle", widget: "string"}
+            - {label: "Button Text", name: "buttontext", widget: "string"}
+            - {label: "Background Image", name: "image", widget: "image"}
+          - label: "Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Introductory Text", name: "introduction", widget: "string"}
+              - {label: "Link text", name: "text", widget: "string"}
+              - label: "Link to page"
+                name: "page"
+                widget: "select"
+                options:
+                  - {label: "About", value: "about"}
+                  - {label: "Contact", value: "contact"}
+                  - {label: "Health Assessment", value: "health-assessment"}
+                  - {label: "Pricing", value: "pricing"}
+                  - {label: "Sign Up", value: "signup"}
+      - label: "Health Assessment Pages"
+        name: "assessment"
+        file: "content/_assessment.json"
+        fields:
+          - {label: "Background Image", name: "image", widget: "image"}
+

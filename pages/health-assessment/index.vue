@@ -2,7 +2,7 @@
   <div class="page-container">
     <section class="hero hero--large">
       <div class="hero__mask hero__mask--blue">
-        <img src="~/assets/images/covers/health-assessment.jpg" alt="" class="hero__image">
+        <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
             <health-assessment></health-assessment>
@@ -17,6 +17,10 @@
 import HealthAssessment from '~/components/HealthAssessment.vue';
 
 export default {
+  async asyncData({ params }) {
+    const pageData = await import('~/content/_assessment.json');
+    return pageData;
+  },
   data() {
     return {};
   },

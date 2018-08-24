@@ -3,14 +3,12 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__mask hero__mask--blue">
+        <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
-            <h1>Thank you!</h1>
-            <p class="hero__description hero__description--large color-green">
-              Begin your health journey today for<br>
-              $29/month or $290/year.
-            </p>
-            <a href="" class="button">Sign Up</a>
+            <h1>{{ header.headline }}</h1>
+            <p class="hero__description hero__description--large color-green">{{ header.subtitle }}</p>
+            <a href="" class="button">{{ header.buttontext }}</a>
           </div>
         </div>
       </div>
@@ -175,11 +173,10 @@
     <!-- CTA -->
     <section class="bg-green-gradient-radial p-t-100 p-b-100">
       <div class="wrapper">
-        <p class="text-center intro-paragraph">Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio.</p>
-        <div class="flex-container flex-center">
-          <a href="" class="button button--blue m-r-20">Sign up today</a>
-          <a href="/pricing" class="button button--white">Pricing Options</a>
-        </div>
+        <p class="text-center">{{ cta.introduction }}</p>
+      </div>
+      <div class="wrapper flex-container flex-center">
+        <nuxt-link :to="`/${cta.page}`" class="button button--white">{{ cta.text }}</nuxt-link>
       </div>
     </section>
   </div>
@@ -187,6 +184,10 @@
 
 <script>
 export default {
+  async asyncData({ params }) {
+    const pageData = await import('~/content/_results.json');
+    return pageData;
+  },
   data() {
     return {};
   },
