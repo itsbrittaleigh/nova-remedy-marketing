@@ -19,7 +19,9 @@
     <section class="lifted-section">
       <div class="wrapper flex-container--desktop flex-between">
         <div class="video-card video-card--narrow">
-          <img src="~/assets/images/video-stills/video1.jpg" alt="" class="video-card__image">
+          <div class="video-card__image-container">
+            <img src="~/assets/images/video-stills/video1.jpg" alt="" class="video-card__image">
+          </div>
           <div class="video-card__content">
             <h3 class="color-green video-card__title">About video headline</h3>
             <p class="video-card__copy">Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.</p>
@@ -50,7 +52,9 @@
           </div>
         </div>
         <div class="video-card video-card--narrow">
-          <img src="~/assets/images/video-stills/video2.jpg" alt="" class="video-card__image">
+          <div class="video-card__image-container video-card__image-container--blue">
+            <img src="~/assets/images/video-stills/video2.jpg" alt="" class="video-card__image">
+          </div>
           <div class="video-card__content">
             <h3 class="color-blue video-card__title">About video headline</h3>
             <p class="video-card__copy">Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.</p>
@@ -81,7 +85,9 @@
           </div>
         </div>
         <div class="video-card video-card--narrow">
-          <img src="~/assets/images/video-stills/video3.jpg" alt="" class="video-card__image">
+          <div class="video-card__image-container">
+            <img src="~/assets/images/video-stills/video3.jpg" alt="" class="video-card__image">
+          </div>
           <div class="video-card__content">
             <h3 class="color-green video-card__title">About video headline</h3>
             <p class="video-card__copy">Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.</p>

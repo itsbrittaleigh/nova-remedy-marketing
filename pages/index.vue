@@ -63,7 +63,6 @@
               >
                 {{ disease }}
               </li>
-              <li class="feature-list__item">And more</li>
             </ul>
           </div>
           <div class="flex-sections__section">
@@ -92,8 +91,15 @@
           v-for="(video, index) in videos.videos"
           :key="index"
           class="video-card"
+          @click="displayVideoModal(index)"
         >
-          <img :src="video.image" alt="" class="video-card__image">
+          <div 
+            :class="{
+              'video-card__image-container': true,
+              'video-card__image-container--blue': index % 2 !== 0,
+            }">
+            <img :src="video.image" class="video-card__image">
+          </div>
           <div class="video-card__content">
             <h3 :class="{
               'video-card__title': true,
@@ -126,6 +132,9 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div v-show="video.modalIsVisible" class="video-card__modal">
+            <p>Yeah I'm showing</p>
           </div>
         </div>
       </div>

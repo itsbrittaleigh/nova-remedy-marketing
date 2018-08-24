@@ -23,7 +23,10 @@
           >
             <img :src="prop.image" alt="" class="card__profile-image hidden-on-mobile m-b-20">
             <img :src="prop.icon" alt="Lotus icon with green gradient" class="card__icon hidden-on-desktop">
-            <span class="card__divider"></span>
+            <span :class="{
+              'card__divider': true,
+              'bg-darkblue': index % 2 !== 0
+            }"></span>
             <div class="card__content">
               <h3
                 :class="{
@@ -71,7 +74,12 @@
             <p class="card__copy m-b-10">{{ card.snippet }}</p>
             <accordion-section>
               <template slot="accordion-header">
-                <a href="#" class="color-green">Read more</a>
+                <a href="#" :class="{
+                  'color-green': true,
+                  'color-darkblue': index % 2 !== 0,
+                }">
+                  Read more
+                </a>
               </template>
               <template slot="accordion-content">
                 <p>{{ card.description }}</p>
@@ -79,7 +87,12 @@
             </accordion-section>
           </div>
           <div class="card__statistic hidden-on-mobile visible-on-tablet">
-            <p class="statistic__number">{{ card.statistic.number }}</p>
+            <p :class="{
+              'statistic__number': true,
+              'color-darkblue': index % 2 !== 0,
+            }">
+              {{ card.statistic.number }}
+            </p>
             <p class="statistic__label">{{ card.statistic.description }}</p>
           </div>
         </div>

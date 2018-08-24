@@ -1,7 +1,7 @@
 <template>
   <div class="assessment__field">
     <p class="assessment__question">{{ question.question }}</p>
-    <div class="assessment__choices">
+    <div class="assessment__choices assessment__choices--flex">
       <input
         type="tel"
         v-model="localValue"
