@@ -96,7 +96,8 @@
         "benefits": "Flexibility, posture",
         "uses": "Hypertension, stomach, heart disease",
         "duration": "15 minutes, 4 times per week",
-        "image": "/images/uploads/pricing.jpg"
+        "image": "/images/uploads/pricing.jpg",
+        "video": "/images/uploads/home__old.mp4"
       },
       {
         "headline": "About video headline",
@@ -105,7 +106,8 @@
         "benefits": "Flexibility, posture",
         "uses": "Hypertension, stomach, heart disease",
         "duration": "5 minutes, daily",
-        "image": "/images/uploads/health-assessment.jpg"
+        "image": "/images/uploads/health-assessment.jpg",
+        "video": "/images/uploads/home2.mp4"
       }
     ]
   },
