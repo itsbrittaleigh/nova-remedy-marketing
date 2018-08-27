@@ -86,7 +86,8 @@
         "benefits": "Assists in breathing, posture, endurance",
         "uses": "Hypertension, stomach, endocrine disease",
         "duration": "10 minutes, 3 times per week",
-        "image": "/images/uploads/video1.jpg"
+        "image": "/images/uploads/video1.jpg",
+        "video": "/images/uploads/home.mp4"
       },
       {
         "headline": "About video headline",
