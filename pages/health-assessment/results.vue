@@ -8,7 +8,7 @@
           <div class="hero__content">
             <h1>{{ header.headline }}</h1>
             <p class="hero__description hero__description--large color-green">{{ header.subtitle }}</p>
-            <a href="" class="button">{{ header.buttontext }}</a>
+            <a href="https://nova-remedy-testing.teachable.com/p/diabetes-wellness-program" class="button">{{ header.buttontext }}</a>
           </div>
         </div>
       </div>
