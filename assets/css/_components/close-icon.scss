@@ -1,0 +1,35 @@
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    &:before,
+    &:after {
+      background: $blue;
+    }
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background: $green;
+    margin-top: -2px;
+    border-radius: 4px;
+    transition: 0.4s;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

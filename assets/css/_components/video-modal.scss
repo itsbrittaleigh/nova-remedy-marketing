@@ -1,0 +1,55 @@
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.video-modal__background {
+  background: $gradient--blue;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.video-modal__card {
+  background: $white;
+  border-radius: 5px;
+  width: 96%;
+  position: relative;
+  z-index: 101;
+  padding: 40px 20px;
+  opacity: 0;
+  top: 200px;
+  transition: 0.4s;
+  @media only screen and (min-width: $medium) {
+    width: 700px;
+    padding: 40px;
+  }
+}
+
+.video-modal__video {
+  width: 100%;
+  height: auto;
+}
+
+.video-modal.visible {
+  pointer-events: initial;
+  .video-modal__background {
+    opacity: 0.95;
+  }
+  .video-modal__card {
+    opacity: 1;
+    top: 0;
+  }
+}

@@ -91,7 +91,7 @@
           v-for="(video, index) in videos.videos"
           :key="index"
           class="video-card"
-          @click="displayVideoModal(index)"
+          @click="selectVideo(index)"
         >
           <div 
             :class="{
@@ -133,10 +133,11 @@
               </ul>
             </div>
           </div>
-          <div v-show="video.modalIsVisible" class="video-card__modal">
-            <p>Yeah I'm showing</p>
-          </div>
         </div>
+        <video-modal
+          :video="selectedVideo"
+          @close="closeModal"
+        ></video-modal>
       </div>
     </section>
     <!-- Process -->
@@ -179,6 +180,7 @@
 
 <script>
 import AccordionSection from '~/components/AccordionSection.vue';
+import VideoModal from '~/components/VideoModal.vue';
 
 export default {
   async asyncData({ params }) {
@@ -186,10 +188,22 @@ export default {
     return pageData;
   },
   data() {
-    return {};
+    return {
+      selectedVideo: {},
+    };
   },
   components: {
     'accordion-section': AccordionSection,
+    'video-modal': VideoModal,
+  },
+  methods: {
+    selectVideo(videoIndex) {
+      this.selectedVideo = this.videos.videos[videoIndex];
+    },
+    closeModal() {
+      console.log('here');
+      this.selectedVideo = {};
+    },
   },
   head() {
     return {
