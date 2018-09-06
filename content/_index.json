@@ -38,15 +38,15 @@
   ],
   "overview": {
     "about": {
-      "headline": "Headline about Nova Remedy goes here",
+      "headline": "Our Goal: Empowering Patients",
       "description": "Nova Remedy was founded with one main goal: empowering patients to take control of their health with personalized programs combining Eastern & Western medicine practices that focus on healthy lifestyle, behavior, and emotional choices.",
       "link": {
-        "text": "Learn more about Nova Remedy",
+        "text": "Learn More About Our Mission",
         "page": "about"
       }
     },
     "diseases": {
-      "headline": "Chronic diseases headline goes here",
+      "headline": "Our Videos Aim to Prevent These Chronic Diseases",
       "diseases": [
         "Arthritis",
         "Diabetes",
@@ -61,8 +61,8 @@
       ]
     },
     "doctor": {
-      "headline": "Trust building headline about doctor here",
-      "description": "Lorest, est peria volorem porisim olorest ruptumquas. Num non ex estionsequam. Bea lorem ute is ipsandelest ipsam.",
+      "headline": "Speak with Our Accredited Medical Professionals",
+      "description": "Our group of accredited medical professionals come from a wide range of backgrounds, disciplines, and educations.",
       "information": {
         "name": "Doctor Name",
         "title": "Title",
@@ -70,14 +70,14 @@
         "image": "/images/uploads/generic-doctor.png"
       },
       "link": {
-        "text": "Read more about Nova Remedy's founder",
+        "text": "Meet The Nova Remedy Team",
         "page": "about"
       }
     }
   },
   "videos": {
-    "headline": "Videos Headline",
-    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem lorem ipsum dolor sit amet.",
+    "headline": "CUSTOMIZED VIDEO PLANS",
+    "description": "With 120+ videos on the Nova Remedy platform, we aim to prevent chronic diseases through easy-to-follow video tutorials that target different parts of the body and issues that can stem from those areas.",
     "videos": [
       {
         "headline": "About video headline",
@@ -113,7 +113,7 @@
   },
   "process": {
     "headline": "The Process",
-    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.",
+    "description": "Our three-step process takes a multi-faceted approach to customizing your health plan, taking diet, activity levels, current medical issues, and more into account.",
     "link": {
       "text": "Learn more about our process",
       "page": "about"
