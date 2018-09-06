@@ -1,45 +1,45 @@
 {
   "meta": {
-    "title": "Welcome | Nova Remedy",
+    "title": "Nova Remedy: ",
     "description": ""
   },
   "header": {
-    "headline": "Testing Nova Remedy",
-    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.",
+    "headline": "NOVA REMEDY",
+    "description": "At Nova Remedy, we want to make the world of healthcare more human. By empowering you to take control of your health journey, our goal is to help you develop a personalized program of health, behavior, and diet.",
     "buttontext": "Start your health journey today",
     "image": "/images/uploads/home.jpg"
   },
   "props": [
     {
-      "title": "Custom",
-      "description": "Custom healing plans for many chronic diseases built by doctors",
+      "title": "CUSTOMIZED",
+      "description": "Customized healing plans for many chronic diseases built by doctors",
       "image": "/images/uploads/lotus-icon-green.png"
     },
     {
-      "title": "Diverse",
+      "title": "INTEGRATIVE",
       "description": "Combining Eastern and Western medicine to focus on prevention",
       "image": "/images/uploads/lotus-icon-blue.png"
     },
     {
-      "title": "Whole Body",
+      "title": "HOLISTIC",
       "description": "Focus on healing the whole body through research-based health plans",
       "image": "/images/uploads/lotus-icon-green.png"
     },
     {
       "title": "Mobile",
-      "description": "Digital platform with videos and courses built by medical professionals",
+      "description": "Digital platform with over 120 videos and courses built by medical professionals",
       "image": "/images/uploads/lotus-icon-blue.png"
     },
     {
-      "title": "Interactive",
-      "description": "Coaching from doctors and live chats with medical professionals",
+      "title": "INTERACTIVE",
+      "description": "Real-time live chat with accredited doctors and medical professionals",
       "image": "/images/uploads/lotus-icon-green.png"
     }
   ],
   "overview": {
     "about": {
       "headline": "Headline about Nova Remedy goes here",
-      "description": "Additional copy about Nova Remedy and why the website was created for people dealing with diseases. Lorest, est peria volorem porisim olorest ruptumquas. Num non ex estionsequam quias ut quis. Louptumquas. Num non ex estionsequam quias ut quis.",
+      "description": "Nova Remedy was founded with one main goal: empowering patients to take control of their health with personalized programs combining Eastern & Western medicine practices that focus on healthy lifestyle, behavior, and emotional choices.",
       "link": {
         "text": "Learn more about Nova Remedy",
         "page": "about"
