@@ -4,32 +4,32 @@
     "description": ""
   },
   "header": {
-    "headline": "About",
-    "description": "Lorem ipsum placeholder text dolor fugit aut et, odipiti ommos arum lautassitat landaecte alitatur. Ducia volupta tempore pudiae. Lorem ipsum dolor sit amet.",
+    "headline": "OUR STORY",
+    "description": "Nova Remedy was founded with a belief that improved diet, exercise, and behavioral choices that combine Eastern & Western medicine philosophies can truly change a person's life.",
     "image": "/images/uploads/about.jpg"
   },
   "props": [
     {
       "title": "Increase your energy levels",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "description": "With our video tutorials, boost your energy levels naturally and feel re-energized and rejuvenated.",
       "icon": "/images/uploads/lotus-icon-green.png",
       "image": "/images/uploads/contact.jpg"
     },
     {
       "title": "Decrease your blood pressure",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "description": "Lifestyle changes can significantly reduce high blood pressure and even lower your risk for hypertension.",
       "icon": "/images/uploads/lotus-icon-blue.png",
       "image": "/images/uploads/about.jpg"
     },
     {
       "title": "Build a custom nutrition plan",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "description": "We can help you create meal plans that are nutritious, easy-to-follow, and most importantly, taste great.",
       "icon": "/images/uploads/lotus-icon-green.png",
       "image": "/images/uploads/health-assessment.jpg"
     },
     {
       "title": "Save money on medications",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "description": "Through a more natural approach highlighting diet and exercise, you can lessen your need for costly medications.",
       "icon": "/images/uploads/lotus-icon-blue.png",
       "image": "/images/uploads/home.jpg"
     },
