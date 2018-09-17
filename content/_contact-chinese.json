@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Contact Nova Remedy: Start Your New Health Journey Now",
+    "description": "Begin your journey to a healthier lifestyle by contacting us today. Call, email, or visit our Customer Service Team in our Ann Arbor office today!"
+  },
+  "header": {
+    "headline": "Get In Touch With Us",
+    "description": "Begin your journey to a healthier lifestyle by contacting us today. Call or email our Customer Service Team or visit our Ann Arbor office today!",
+    "image": "/images/uploads/contact.jpg"
+  },
+  "methods": {
+    "phones": [
+      {
+        "title": "Customer Service",
+        "number": "800-123-4567"
+      },
+      {
+        "title": "Business",
+        "number": "800-123-4567"
+      }
+    ],
+    "emails": [
+      {
+        "title": "Company Email",
+        "email": "novatechllc@umich.edu"
+      },
+      {
+        "title": "Category",
+        "email": "email@novaremedy.com"
+      }
+    ],
+    "address": {
+      "street": "12345 Main Street",
+      "city": "Ann Arbor",
+      "state": "MI",
+      "zip": "40234"
+    }
+  },
+  "form": {
+    "headline": "Get in Touch"
+  }
+}

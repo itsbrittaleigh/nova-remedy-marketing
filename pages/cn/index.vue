@@ -8,7 +8,7 @@
           <div class="hero__content">
             <h1>{{ header.headline }}</h1>
             <p class="hero__description">{{ header.description }}</p>
-            <nuxt-link to="/health-assessment" class="button button--blue m-t-20">{{ header.buttontext }}</nuxt-link>
+            <nuxt-link to="/cn/health-assessment" class="button button--blue m-t-20">{{ header.buttontext }}</nuxt-link>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
           <div class="flex-sections__section">
             <h3>{{ overview.about.headline }}</h3>
             <p>{{ overview.about.description }}</p>
-            <nuxt-link :to="`/${overview.about.link.page}`">{{ overview.about.link.text }}</nuxt-link>
+            <nuxt-link :to="`/cn/${overview.about.link.page}`">{{ overview.about.link.text }}</nuxt-link>
           </div>
           <div class="flex-sections__section">
             <h3 class="color-green">{{ overview.diseases.headline }}</h3>
@@ -76,7 +76,7 @@
                 <p class="testimonial__copy">{{ overview.doctor.information.credentials }}</p>
               </div>
             </div>
-            <nuxt-link :to="`/${overview.doctor.link.page}`">{{ overview.doctor.link.text }}</nuxt-link>
+            <nuxt-link :to="`/cn/${overview.doctor.link.page}`">{{ overview.doctor.link.text }}</nuxt-link>
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@
         <h2>{{ process.headline }}</h2>
         <p class="intro-paragraph">{{ process.description }}</p>
         <p class="text-center">
-          <nuxt-link :to="`/${process.link.page}`">{{ process.link.text }}</nuxt-link>
+          <nuxt-link :to="`/cn/${process.link.page}`">{{ process.link.text }}</nuxt-link>
         </p>
         <div class="process-steps">
           <div
@@ -172,7 +172,7 @@
     <!-- CTA -->
     <section class="bg-green-gradient-radial p-t-100 p-b-100">
       <div class="wrapper flex-container flex-center">
-        <nuxt-link :to="`/${cta.page}`" class="button button--white">{{ cta.text }}</nuxt-link>
+        <nuxt-link :to="`/cn/${cta.page}`" class="button button--white">{{ cta.text }}</nuxt-link>
       </div>
     </section>
   </div>
@@ -183,8 +183,9 @@ import AccordionSection from '~/components/AccordionSection.vue';
 import VideoModal from '~/components/VideoModal.vue';
 
 export default {
+  layout: 'default-chinese',
   async asyncData({ params }) {
-    const pageData = await import('~/content/_index.json');
+    const pageData = await import('~/content/_index-chinese.json');
     return pageData;
   },
   data() {

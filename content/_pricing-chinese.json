@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Pricing | Nova Remedy",
+    "description": ""
+  },
+  "header": {
+    "headline": "Pricing",
+    "description": "Choose from one of our three affordable pricing packages and begin your journey to better health and well-being today. Find out more about each package below.",
+    "image": "/images/uploads/pricing.jpg"
+  },
+  "packages": [
+    {
+      "name": "Package name",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "month": "$29",
+      "year": "$250",
+      "image": "/images/uploads/lotus-icon-green.png",
+      "features": [
+        "Lorem ipsum dolor",
+        "sit amet consectetur",
+        "adipisicing elit",
+        "Voluptatibus exercitationem",
+        "rerum placeat eum",
+        "officiis tempora dicta",
+        "impedit illo deleniti",
+        "necessitatibus quis aliquam"
+      ]
+    },
+    {
+      "name": "Package name",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "month": "$39",
+      "year": "$350",
+      "image": "/images/uploads/lotus-icon-blue.png",
+      "features": [
+        "Lorem ipsum dolor",
+        "sit amet consectetur",
+        "adipisicing elit",
+        "Voluptatibus exercitationem",
+        "rerum placeat eum",
+        "officiis tempora dicta",
+        "impedit illo deleniti",
+        "necessitatibus quis aliquam"
+      ]
+    },
+    {
+      "name": "Package name",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+      "month": "$49",
+      "year": "$450",
+      "image": "/images/uploads/lotus-icon-green.png",
+      "features": [
+        "Lorem ipsum dolor",
+        "sit amet consectetur",
+        "adipisicing elit",
+        "Voluptatibus exercitationem",
+        "rerum placeat eum",
+        "officiis tempora dicta",
+        "impedit illo deleniti",
+        "necessitatibus quis aliquam"
+      ]
+    }
+  ]
+}

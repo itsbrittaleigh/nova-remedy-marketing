@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Nova Remedy: A New Approach to Health Through Digital Therapeutics",
+    "description": "Nova Remedy is a smart & simple digital therapeutics platform to empower patients by development of personalized programs of healthy lifestyles and behaviors."
+  },
+  "header": {
+    "headline": "NOVA REMEDY",
+    "description": "At Nova Remedy, we want to make the world of digital therapeutics more human. By empowering you to take control of your health journey, our goal is to help you develop a personalized program of health, behavior, and diet.",
+    "buttontext": "Start your health journey today",
+    "image": "/images/uploads/home.jpg"
+  },
+  "props": [
+    {
+      "title": "CUSTOMIZED",
+      "description": "Customized healing plans, that are non-invasive, for many chronic diseases built by doctors",
+      "image": "/images/uploads/lotus-icon-green.png"
+    },
+    {
+      "title": "INTEGRATIVE",
+      "description": "Combining Eastern and Western medicine to focus on prevention",
+      "image": "/images/uploads/lotus-icon-blue.png"
+    },
+    {
+      "title": "HOLISTIC",
+      "description": "Focus on healing the whole body through research-based health plans",
+      "image": "/images/uploads/lotus-icon-green.png"
+    },
+    {
+      "title": "Mobile",
+      "description": "Digital platform with over 100 videos and courses built by medical professionals",
+      "image": "/images/uploads/lotus-icon-blue.png"
+    },
+    {
+      "title": "INTERACTIVE",
+      "description": "Real-time live chat with accredited doctors and medical professionals",
+      "image": "/images/uploads/lotus-icon-green.png"
+    }
+  ],
+  "overview": {
+    "about": {
+      "headline": "Our Goal: Empowering Patients",
+      "description": "Nova Remedy was founded with one main goal: empowering patients to take control of their health with personalized programs combining Eastern & Western medicine practices that focus on healthy lifestyle, behavior, and emotional choices.",
+      "link": {
+        "text": "Learn More About Our Mission",
+        "page": "about"
+      }
+    },
+    "diseases": {
+      "headline": "Our Videos Aim to Prevent These Chronic Diseases",
+      "diseases": [
+        "Arthritis",
+        "Diabetes",
+        "Endocrine disorder",
+        "Gynecological",
+        "Heart disease",
+        "Hypertension",
+        "Insomnia",
+        "Lung disease",
+        "Osteoporosis",
+        "Stomach disease"
+      ]
+    },
+    "doctor": {
+      "headline": "Speak with Our Accredited Medical Professionals",
+      "description": "Our group of accredited medical professionals come from a wide range of backgrounds, disciplines, and educations.",
+      "information": {
+        "name": "Doctor Name",
+        "title": "Title",
+        "credentials": "Education, Credentials",
+        "image": "/images/uploads/generic-doctor.png"
+      },
+      "link": {
+        "text": "Meet The Nova Remedy Team",
+        "page": "about"
+      }
+    }
+  },
+  "videos": {
+    "headline": "CUSTOMIZED VIDEO PLANS",
+    "description": "With eventually 100+ videos on the Nova Remedy platform, we aim to prevent chronic diseases through easy-to-follow video tutorials that target different parts of the body and issues that can stem from those areas.",
+    "videos": [
+      {
+        "headline": "About video headline",
+        "description": "Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.",
+        "type": "Upper body",
+        "benefits": "Assists in breathing, posture, endurance",
+        "uses": "Hypertension, stomach, endocrine disease",
+        "duration": "10 minutes, 3 times per week",
+        "image": "/images/uploads/video1.jpg",
+        "video": "/images/uploads/home.mp4"
+      },
+      {
+        "headline": "About video headline",
+        "description": "Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.",
+        "type": "Arms",
+        "benefits": "Flexibility, posture",
+        "uses": "Hypertension, stomach, heart disease",
+        "duration": "15 minutes, 4 times per week",
+        "image": "/images/uploads/pricing.jpg",
+        "video": "/images/uploads/home__old.mp4"
+      },
+      {
+        "headline": "About video headline",
+        "description": "Lorem ipsum dolor estionsequam quias ut quis eaquas rent. Bea lorem ute plia digenis ipsandelest ipsam.",
+        "type": "Legs",
+        "benefits": "Flexibility, posture",
+        "uses": "Hypertension, stomach, heart disease",
+        "duration": "5 minutes, daily",
+        "image": "/images/uploads/health-assessment.jpg",
+        "video": "/images/uploads/home2.mp4"
+      }
+    ]
+  },
+  "process": {
+    "headline": "The Process",
+    "description": "Our three-step process takes a multi-faceted approach to customizing your health plan, taking diet, activity levels, current medical issues, and more into account.",
+    "link": {
+      "text": "Learn more about our process",
+      "page": "about"
+    },
+    "steps": [
+      {
+        "title": "Take the survey",
+        "description": "Answer questions about your diet, exercise, and chronic diseases.",
+        "image": "/images/uploads/survey.png"
+      },
+      {
+        "title": "Receive your assessment",
+        "description": "Receive a custom exercise plan based on your results.",
+        "image": "/images/uploads/assessment.png"
+      },
+      {
+        "title": "Begin your health journey",
+        "description": "Start your recommended exercise and nutrition plan.",
+        "image": "/images/uploads/journey.png"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Start your health journey today",
+    "page": "health-assessment"
+  }
+}

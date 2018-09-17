@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "About | Nova Remedy",
+    "description": ""
+  },
+  "header": {
+    "headline": "OUR STORY",
+    "description": "Nova Remedy was founded with a belief that improved diet, exercise, and behavioral choices that combine Eastern & Western medicine philosophies can truly change a person's life.",
+    "image": "/images/uploads/about.jpg"
+  },
+  "props": [
+    {
+      "title": "Increase your energy levels",
+      "description": "With our video tutorials, boost your energy levels naturally and feel re-energized and rejuvenated.",
+      "icon": "/images/uploads/lotus-icon-green.png",
+      "image": "/images/uploads/contact.jpg"
+    },
+    {
+      "title": "Decrease your blood pressure",
+      "description": "Lifestyle changes can significantly reduce high blood pressure and even lower your risk for hypertension.",
+      "icon": "/images/uploads/lotus-icon-blue.png",
+      "image": "/images/uploads/about.jpg"
+    },
+    {
+      "title": "Build a custom nutrition plan",
+      "description": "We can help you create meal plans that are nutritious, easy-to-follow, and most importantly, taste great.",
+      "icon": "/images/uploads/lotus-icon-green.png",
+      "image": "/images/uploads/health-assessment.jpg"
+    },
+    {
+      "title": "Save money on medications",
+      "description": "Through a more natural approach highlighting diet and exercise, you can lessen your need for costly medications.",
+      "icon": "/images/uploads/lotus-icon-blue.png",
+      "image": "/images/uploads/home.jpg"
+    },
+    {
+      "title": "Interactive",
+      "description": "Coaching from doctors and lives chats with medical professionals.",
+      "icon": "/images/uploads/lotus-icon-green.png",
+      "image": "/images/uploads/pricing.jpg"
+    }
+  ],
+  "overview": {
+    "headline": "Headline Here",
+    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.",
+    "cards": [
+      {
+        "title": "Nova Remedy's Story",
+        "snippet": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/lotus-icon-green.png",
+        "statistic": {
+          "number": "95%",
+          "description": "Text description about number"
+        }
+      },
+      {
+        "title": "About Headline",
+        "snippet": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/lotus-icon-blue.png",
+        "statistic": {
+          "number": "14",
+          "description": "Text description about number"
+        }
+      },
+      {
+        "title": "Headline about the Video Process",
+        "snippet": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu lorem ipsum.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/lotus-icon-green.png",
+        "statistic": {
+          "number": "1200+",
+          "description": "Text description about number"
+        }
+      }
+    ]
+  },
+  "process": {
+    "headline": "How Nova Works",
+    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.",
+    "steps": [
+      {
+        "title": "Take the health assessment",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/assessment2.png"
+      },
+      {
+        "title": "Receive your personalized plan",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/assessment.png"
+      },
+      {
+        "title": "Begin your new health journey",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil rerum dolores delectus laudantium, quibusdam doloribus asperiores id, a officiis debitis, tenetur ratione temporibus voluptate quod ullam voluptatibus aliquid facere!",
+        "image": "/images/uploads/journey2.png"
+      }
+    ]
+  },
+  "team": {
+    "headline": "The Nova Remedy Team",
+    "description": "Lorem ipsum ute plia digenis ipsandelest ipsam. Ugit hario quis si di volecati temporuptat as ex et utaersp eliquid maxim dolorestiore nulparum faccustio conecatem.",
+    "members": [
+      {
+        "name": "Ronald Liu",
+        "title": "Chief Marketing Officer",
+        "description": "Master of Health Informatics, University of Michigan. ",
+        "image": "/images/uploads/img_1018-150x150.jpg"
+      },
+      {
+        "name": "Sheng Kung",
+        "title": "Chief Data Scientist and Technical Advisor ",
+        "description": "PhD in Machine Learning",
+        "image": "/images/uploads/dsc02419d.jpg"
+      },
+      {
+        "name": "Yitong (Lisa) Lin",
+        "title": "Chief Medical Officer",
+        "description": "Certified M.D, Shanghai Jiaotong and Fudan University, Main creator of the courses. ",
+        "image": "/images/uploads/img_9758-1-169x300.jpg"
+      },
+      {
+        "name": "Team Member",
+        "title": "Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member4.png"
+      },
+      {
+        "name": "Team Member",
+        "title": "Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member5.png"
+      },
+      {
+        "name": "Team Member",
+        "title": "Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "image": "/images/uploads/member6.png"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Start your health journey today",
+    "page": "health-assessment"
+  }
+}
