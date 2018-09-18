@@ -25,9 +25,10 @@
       <li class="main-nav__menu-item">
         <nuxt-link to="/cn/about" class="main-nav__menu-item-link">关于</nuxt-link>
       </li>
-      <li class="main-nav__menu-item">
+      <!-- TODO: Ron (Nova) decided to not have a pricing page for now -->
+      <!-- <li class="main-nav__menu-item">
         <nuxt-link to="/cn/pricing" class="main-nav__menu-item-link">价钱</nuxt-link>
-      </li>
+      </li> -->
       <li class="main-nav__menu-item">
         <nuxt-link to="/cn/contact" class="main-nav__menu-item-link">联系</nuxt-link>
       </li>

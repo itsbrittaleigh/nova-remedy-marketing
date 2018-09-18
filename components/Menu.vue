@@ -25,12 +25,10 @@
       <li class="main-nav__menu-item">
         <nuxt-link to="/about" class="main-nav__menu-item-link">About</nuxt-link>
       </li>
+      <!-- TODO: Ron (Nova) decided to not have a pricing page for now -->
       <!-- <li class="main-nav__menu-item">
-        <nuxt-link to="/frequently-asked-questions" class="main-nav__menu-item-link">FAQ</nuxt-link>
-      </li> -->
-      <li class="main-nav__menu-item">
         <nuxt-link to="/pricing" class="main-nav__menu-item-link">Pricing</nuxt-link>
-      </li>
+      </li> -->
       <li class="main-nav__menu-item">
         <nuxt-link to="/contact" class="main-nav__menu-item-link">Contact</nuxt-link>
       </li>

@@ -56,10 +56,11 @@
       </div>
     </section>
 
-    <section class="padded-section">
+    <!-- TODO: Ron (Nova) decided to not show the form for now -->
+    <!-- <section class="padded-section">
       <h2 class="color-darkblue">{{ form.headline }}</h2>
       <contact-form></contact-form>
-    </section>
+    </section> -->
   </div>
 </template>
 

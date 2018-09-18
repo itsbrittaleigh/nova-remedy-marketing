@@ -49,7 +49,8 @@
       </div>
     </section>
     <!-- Accordion cards -->
-    <section class="padded-section p-t-0">
+    <!-- TODO: Ron (Nova) decided to not have for now -->
+    <!-- <section class="padded-section p-t-0">
       <div class="wrapper">
         <h2 class="is-marginless">{{ overview.headline }}</h2>
         <p class="text-center intro-paragraph m-b-50">{{ overview.description }}</p>
@@ -97,7 +98,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Process -->
     <section class="padded-section">
       <div class="wrapper">
