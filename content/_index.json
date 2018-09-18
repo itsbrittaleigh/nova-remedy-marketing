@@ -48,16 +48,36 @@
     "diseases": {
       "headline": "Our Videos Aim to Prevent These Chronic Diseases",
       "diseases": [
-        "Arthritis",
-        "Diabetes",
-        "Endocrine disorder",
-        "Gynecological",
-        "Heart disease",
-        "Hypertension",
-        "Insomnia",
-        "Lung disease",
-        "Osteoporosis",
-        "Stomach disease"
+        {
+          "disease": "Arthritis"
+        },
+        {
+          "disease": "Diabetes"
+        },
+        {
+          "disease": "Endocrine Disorder"
+        },
+        {
+          "disease": "Gynecological"
+        },
+        {
+          "disease": "Heart Disease"
+        },
+        {
+          "disease": "Hypertension"
+        },
+        {
+          "disease": "Insomnia"
+        },
+        {
+          "disease": "Lung disease"
+        },
+        {
+          "disease": "Osteoporosis"
+        },
+        {
+          "disease": "Stomach Disease"
+        }
       ]
     },
     "doctor": {
