@@ -65,7 +65,8 @@ collections:
                   - label: "Diseases"
                     name: "diseases"
                     widget: "list"
-                    field: {label: "Disease", name: "disease", widget: "string"}
+                    fields:
+                      - {label: "Disease", name: "disease", widget: "string"}
               - label: "Doctor Overview"
                 name: "doctor"
                 widget: "object"
