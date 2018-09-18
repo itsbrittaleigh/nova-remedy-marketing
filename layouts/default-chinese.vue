@@ -12,16 +12,19 @@
           </nuxt-link>
           <ul class="secondary-nav__menu">
             <li class="secondary-nav__menu-item">
-              <nuxt-link to="/cn/about" class="secondary-nav__menu-item-link">About</nuxt-link>
+              <nuxt-link to="/cn/about" class="secondary-nav__menu-item-link">关于</nuxt-link>
             </li>
             <li class="secondary-nav__menu-item">
-              <nuxt-link to="/cn/health-assessment" class="secondary-nav__menu-item-link">Health Assessment</nuxt-link>
+              <nuxt-link to="/cn/health-assessment" class="secondary-nav__menu-item-link">健康评估</nuxt-link>
             </li>
             <li class="secondary-nav__menu-item">
-              <nuxt-link to="/cn/pricing" class="secondary-nav__menu-item-link">Pricing</nuxt-link>
+              <nuxt-link to="/cn/pricing" class="secondary-nav__menu-item-link">价钱</nuxt-link>
             </li>
             <li class="secondary-nav__menu-item">
-              <nuxt-link to="/cn/contact" class="secondary-nav__menu-item-link">Contact</nuxt-link>
+              <nuxt-link to="/cn/contact" class="secondary-nav__menu-item-link">联系</nuxt-link>
+            </li>
+            <li class="secondary-nav__menu-item">
+              <nuxt-link to="/" class="secondary-nav__menu-item-link">View English Site</nuxt-link>
             </li>
           </ul>
         </nav>

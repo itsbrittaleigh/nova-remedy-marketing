@@ -17,14 +17,14 @@
             <li class="secondary-nav__menu-item">
               <nuxt-link to="/health-assessment" class="secondary-nav__menu-item-link">Health Assessment</nuxt-link>
             </li>
-            <!-- <li class="secondary-nav__menu-item">
-              <nuxt-link to="/frequently-asked-questions" class="secondary-nav__menu-item-link">FAQ</nuxt-link>
-            </li> -->
             <li class="secondary-nav__menu-item">
               <nuxt-link to="/pricing" class="secondary-nav__menu-item-link">Pricing</nuxt-link>
             </li>
             <li class="secondary-nav__menu-item">
               <nuxt-link to="/contact" class="secondary-nav__menu-item-link">Contact</nuxt-link>
+            </li>
+            <li class="secondary-nav__menu-item">
+              <nuxt-link to="/cn" class="secondary-nav__menu-item-link">查看中文网站</nuxt-link>
             </li>
           </ul>
         </nav>

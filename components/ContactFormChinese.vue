@@ -17,23 +17,23 @@
         <form @submit.prevent="checkForm">
           <div class="fields">
             <div class="field">
-              <label for="first_name">First name</label>
+              <label for="first_name">名字</label>
               <input type="text" v-model="contact.firstName">
             </div>
             <div class="field">
-              <label for="last_name">Last name</label>
+              <label for="last_name">姓</label>
               <input type="text" v-model="contact.lastName">
             </div>
             <div class="field">
-              <label for="email">E-mail</label>
+              <label for="email">电子邮件</label>
               <input type="email" v-model="contact.email">
             </div>
             <div class="field">
-              <label for="phone">Phone number</label>
+              <label for="phone">电话号码</label>
               <input type="tel" v-model="contact.phone">
             </div>
             <div class="field">
-              <label>What can we help you with?</label>
+              <label>我们能帮到你什么</label>
               <div class="checkboxes">
                 <div class="checkbox-field">
                   <input
@@ -43,7 +43,7 @@
                     value="Product Support"
                     class="checkbox-field__input"
                   >
-                  <label for="product_support" class="checkbox-field__label">Product Support</label>
+                  <label for="product_support" class="checkbox-field__label">产品支持</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -53,7 +53,7 @@
                     value="Medical"
                     class="checkbox-field__input"
                   >
-                  <label for="medical" class="checkbox-field__label">Medical</label>
+                  <label for="medical" class="checkbox-field__label">医</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -63,7 +63,7 @@
                     value="Business"
                     class="checkbox-field__input"
                   >
-                  <label for="business" class="checkbox-field__label">Business</label>
+                  <label for="business" class="checkbox-field__label">商业</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -73,7 +73,7 @@
                     value="Careers"
                     class="checkbox-field__input"
                   >
-                  <label for="careers" class="checkbox-field__label">Careers</label>
+                  <label for="careers" class="checkbox-field__label">职业生涯</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -83,12 +83,12 @@
                     value="Other"
                     class="checkbox-field__input"
                   >
-                  <label for="other" class="checkbox-field__label">Other</label>
+                  <label for="other" class="checkbox-field__label">其他</label>
                 </div>
               </div>
             </div>
             <div class="field">
-              <label>I am a/an:</label>
+              <label>我是一个:</label>
               <div class="checkboxes">
                 <div class="checkbox-field">
                   <input
@@ -98,7 +98,7 @@
                     value="Nursing Home Employer"
                     class="checkbox-field__input"
                   >
-                  <label for="nursing" class="checkbox-field__label">Nursing Home Employer</label>
+                  <label for="nursing" class="checkbox-field__label">养老院雇主</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -108,7 +108,7 @@
                     value="Student"
                     class="checkbox-field__input"
                   >
-                  <label for="student" class="checkbox-field__label">Student</label>
+                  <label for="student" class="checkbox-field__label">学生</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -118,7 +118,7 @@
                     value="Investor"
                     class="checkbox-field__input"
                   >
-                  <label for="investor" class="checkbox-field__label">Investor</label>
+                  <label for="investor" class="checkbox-field__label">投资者</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -128,7 +128,7 @@
                     value="Hospital Administrator"
                     class="checkbox-field__input"
                   >
-                  <label for="admin" class="checkbox-field__label">Hospital Administrator</label>
+                  <label for="admin" class="checkbox-field__label">医院管理员</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -138,7 +138,7 @@
                     value="Physician"
                     class="checkbox-field__input"
                   >
-                  <label for="physician" class="checkbox-field__label">Physician</label>
+                  <label for="physician" class="checkbox-field__label">医师</label>
                 </div>
                 <div class="checkbox-field">
                   <input
@@ -148,22 +148,22 @@
                     value="Media"
                     class="checkbox-field__input"
                   >
-                  <label for="media" class="checkbox-field__label">Media</label>
+                  <label for="media" class="checkbox-field__label">媒体</label>
                 </div>
               </div>
             </div>
             <div class="field">
-              <label for="message">Message</label>
+              <label for="message">信息</label>
               <textarea v-model="contact.message"></textarea>
             </div>
           </div>
           <div class="flex-container flex-right">
-            <button type="submit">Submit</button>
+            <button type="submit">提交</button>
           </div>
         </form>
       </template>
-      <p v-else class="text-center">Thank you. Your request has been submitted.</p>
-      <p v-if="errorOccurred">Sorry, an error occurred. Please try again later.</p>
+      <p v-else class="text-center">谢谢。 您的申请已经提交。</p>
+      <p v-if="errorOccurred">对不起，发生了错误。 请稍后再试。</p>
     </div>
   </div>
 </template>
@@ -191,29 +191,29 @@ export default {
     checkForm() {
       this.errors = [];
       if (!this.contact.firstName) {
-        this.errors.push('First name is required.');
+        this.errors.push('名字是必需的');
       }
       if (!this.contact.lastName) {
-        this.errors.push('Last name is required.');
+        this.errors.push('姓氏是必需的');
       }
       if (!this.contact.email) {
-        this.errors.push('Email address is required.');
+        this.errors.push('需要电子邮件');
       } else if (!this.validEmail(this.contact.email)) {
-        this.errors.push('A valid email is required.');
+        this.errors.push('需要有效的电子邮件');
       }
       if (!this.contact.phone) {
-        this.errors.push('Phone number is required.');
+        this.errors.push('电话号码是必需的');
       } else if (!this.validPhone(this.contact.phone)) {
-        this.errors.push('A valid phone number is required.');
+        this.errors.push('需要有效的电话号码');
       }
       if (!this.contact.helpCategory.length === 0) {
-        this.errors.push('Let us know what we can help you with.');
+        this.errors.push('让我们知道我们可以为您提供哪些帮助');
       }
       if (!this.contact.userType.length === 0) {
-        this.errors.push('Let us know who you are.');
+        this.errors.push('让我们知道你是谁');
       }
       if (!this.contact.message) {
-        this.errors.push('A message is required.');
+        this.errors.push('需要一条消息');
       }
 
       if (this.errors.length) e.preventDefault();

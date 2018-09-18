@@ -29,8 +29,8 @@
               {{ tier.name }}
             </h2>
             <p class="text-center">{{ tier.description }}</p>
-            <p class="text-center pricing-card__rate">{{ tier.month }}/month</p>
-            <p class="text-center pricing-card__annual-rate">{{ tier.year }} billed annually</p>
+            <p class="text-center pricing-card__rate">{{ tier.month }} 每月</p>
+            <p class="text-center pricing-card__annual-rate">{{ tier.year }} 每年</p>
             <span
               :class="{
                 'pricing-card__divider': true,
@@ -48,7 +48,7 @@
                 {{ feature }}
               </li>
             </ul>
-            <a href="#" class="button button--blue pricing-card__button">Sign Up Today</a>
+            <a href="#" class="button button--blue pricing-card__button">立即注册</a>
           </div>
         </div>
       </div>

@@ -112,22 +112,22 @@
               <ul class="video-card__overview-list">
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-blue">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-blue">Exercise Type:</span>
+                  <span class="video-card__overview-list-item-title color-blue">运动类型:</span>
                   {{ video.type }}
                 </li>
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-green">Benefits:</span>
+                  <span class="video-card__overview-list-item-title color-green">好处:</span>
                   {{ video.benefits }}
                 </li>
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-lightblue">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-lightblue">Uses:</span>
+                  <span class="video-card__overview-list-item-title color-lightblue">使用:</span>
                   {{ video.uses }}
                 </li>
                 <li class="video-card__overview-list-item">
                   <span class="video-card__overview-list-item-bullet-point color-green">&#9654;</span>
-                  <span class="video-card__overview-list-item-title color-green">Duration:</span>
+                  <span class="video-card__overview-list-item-title color-green">持续时间:</span>
                   {{ video.duration }}
                 </li>
               </ul>

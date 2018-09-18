@@ -5,7 +5,7 @@
         <img :src="header.image" alt="" class="hero__image">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
-            <health-assessment></health-assessment>
+            <health-assessment lang="cn"></health-assessment>
           </div>
         </div>
       </div>

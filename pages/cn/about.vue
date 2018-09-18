@@ -78,7 +78,7 @@
                   'color-green': true,
                   'color-darkblue': index % 2 !== 0,
                 }">
-                  Read more
+                  阅读更多
                 </a>
               </template>
               <template slot="accordion-content">

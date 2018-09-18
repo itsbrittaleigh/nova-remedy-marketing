@@ -20,19 +20,19 @@
       }"
     >
       <li class="main-nav__menu-item">
-        <nuxt-link to="/cn/health-assessment" class="main-nav__menu-item-link">Health Assessment</nuxt-link>
+        <nuxt-link to="/cn/health-assessment" class="main-nav__menu-item-link">健康评估</nuxt-link>
       </li>
       <li class="main-nav__menu-item">
-        <nuxt-link to="/cn/about" class="main-nav__menu-item-link">About</nuxt-link>
+        <nuxt-link to="/cn/about" class="main-nav__menu-item-link">关于</nuxt-link>
       </li>
       <li class="main-nav__menu-item">
-        <nuxt-link to="/cn/pricing" class="main-nav__menu-item-link">Pricing</nuxt-link>
+        <nuxt-link to="/cn/pricing" class="main-nav__menu-item-link">价钱</nuxt-link>
       </li>
       <li class="main-nav__menu-item">
-        <nuxt-link to="/cn/contact" class="main-nav__menu-item-link">Contact</nuxt-link>
+        <nuxt-link to="/cn/contact" class="main-nav__menu-item-link">联系</nuxt-link>
       </li>
       <li class="main-nav__menu-item">
-        <a href="https://nova-remedy-testing.teachable.com/p/diabetes-wellness-program" class="main-nav__menu-item-link main-nav__menu-item--emphasis">Start Free Trial</a>
+        <a href="https://nova-remedy-testing.teachable.com/p/diabetes-wellness-program" class="main-nav__menu-item-link main-nav__menu-item--emphasis">开启免费体验</a>
       </li>
     </span>
   </ul>

@@ -20,7 +20,7 @@
           v-if="currentQuestionIndex !== 0"
           @click="previousQuestion()"
         >
-          Previous
+          {{ lang === 'cn' ? '以前' : 'Previous' }}
         </button>
       </div>
       <div class="assessment__button-container">
@@ -32,7 +32,12 @@
           :disabled="!currentQuestionIsAnswered"
           @click="nextQuestion()"
         >
-          {{ currentQuestionIndex + 1 === questions.length ? 'Submit' : 'Next' }}
+          <template v-if="lang === 'cn'">
+            {{ currentQuestionIndex + 1 === questions.length ? '提交' : '下一个' }}
+          </template>
+          <template v-else>
+            {{ currentQuestionIndex + 1 === questions.length ? 'Submit' : 'Next' }}
+          </template>
         </button>
       </div>
     </div>
@@ -49,9 +54,10 @@ import Radio from '~/components/fields/Radio.vue';
 import Tel from '~/components/fields/Tel.vue';
 
 export default {
+  props: ['lang'],
   data() {
     return {
-      questions: Questions,
+      questions: this.lang === 'cn' ? Questions.cn : Questions.en,
       currentQuestionIndex: 0,
       currentQuestionIsAnswered: false,
     };
@@ -112,14 +118,6 @@ export default {
       if(value) this.currentQuestionIsAnswered = true;
       else this.currentQuestionIsAnswered = false;
     },
-  },
-  head() {
-    return {
-      title: 'Health Assessment | Nova Remedy',
-      meta: [
-        { hid: 'description', name: 'description', content: '' },
-      ],
-    };
   },
 };
 </script>
