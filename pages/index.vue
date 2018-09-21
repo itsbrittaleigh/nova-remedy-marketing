@@ -61,7 +61,7 @@
                 :key="index"
                 class="feature-list__item"
               >
-                {{ disease }}
+                {{ disease.disease }}
               </li>
             </ul>
           </div>

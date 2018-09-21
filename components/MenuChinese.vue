@@ -33,7 +33,7 @@
         <nuxt-link to="/cn/contact" class="main-nav__menu-item-link">联系</nuxt-link>
       </li>
       <li class="main-nav__menu-item">
-        <a href="https://nova-remedy-testing.teachable.com/p/diabetes-wellness-program" class="main-nav__menu-item-link main-nav__menu-item--emphasis">开启免费体验</a>
+        <a href="https://nova-remedy-therapies.teachable.com/p/nova-remedy" class="main-nav__menu-item-link main-nav__menu-item--emphasis">开启免费体验</a>
       </li>
     </span>
   </ul>
